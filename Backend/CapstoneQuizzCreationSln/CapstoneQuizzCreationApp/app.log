@@ -1,0 +1,42 @@
+INFO  10:40:54 Now listening on: http://localhost:5161
+INFO  10:40:54 Application started. Press Ctrl+C to shut down.
+INFO  10:40:54 Hosting environment: Development
+INFO  10:40:54 Content root path: C:\Users\VC\Documents\CapstoneProject\Backend\CapstoneQuizzCreationSln\CapstoneQuizzCreationApp\
+INFO  10:41:42 Received a user registration request.
+INFO  10:41:44 Entity Framework Core 6.0.30 initialized 'QuizzContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:41:46 Executed DbCommand (149ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [IsSubcribed], [Name], [Phone], [Role])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [UserId]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [UserId] = scope_identity();
+INFO  10:41:46 Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (Size = 8000) (DbType = Binary), @p3='?' (Size = 8000) (DbType = Binary), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [UserCredential] ([Email], [AccountStatus], [HasedPassword], [Password], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+INFO  10:41:46 User registered successfully.
+INFO  10:42:07 Received a user login request.
+INFO  10:42:07 Entity Framework Core 6.0.30 initialized 'QuizzContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:42:07 Executed DbCommand (8ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Email], [u].[AccountStatus], [u].[HasedPassword], [u].[Password], [u].[UserId]
+FROM [UserCredential] AS [u]
+WHERE [u].[Email] = @__key_0
+INFO  10:42:08 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[UserId], [u].[Email], [u].[IsSubcribed], [u].[Name], [u].[Phone], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[UserId] = @__key_0
+INFO  10:42:08 Generating token for customer 1
+INFO  10:42:08 Token generated successfully for customer 1
+INFO  10:42:08 User authenticated successfully.
+INFO  10:42:45 Received a user login request.
+INFO  10:42:45 Entity Framework Core 6.0.30 initialized 'QuizzContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.30' with options: None
+INFO  10:42:45 Executed DbCommand (3ms) [Parameters=[@__key_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [u].[Email], [u].[AccountStatus], [u].[HasedPassword], [u].[Password], [u].[UserId]
+FROM [UserCredential] AS [u]
+WHERE [u].[Email] = @__key_0
+ERROR 10:42:46 An error occurred while logging in.
+CapstoneQuizzCreationApp.CustomException.UserCredentialNotFoundException: No user found with given id senthamil@gail.com
+   at CapstoneQuizzCreationApp.Repositories.UserCredentialRepository.Get(String key) in C:\Users\VC\Documents\CapstoneProject\Backend\CapstoneQuizzCreationSln\CapstoneQuizzCreationApp\Repositories\UserCredentialRepository.cs:line 58
+   at CapstoneQuizzCreationApp.Services.AuthService.Login(LoginDTO loginDTO) in C:\Users\VC\Documents\CapstoneProject\Backend\CapstoneQuizzCreationSln\CapstoneQuizzCreationApp\Services\AuthService.cs:line 43
+ERROR 10:42:46 An error occurred during user authentication: No user found with given id senthamil@gail.com

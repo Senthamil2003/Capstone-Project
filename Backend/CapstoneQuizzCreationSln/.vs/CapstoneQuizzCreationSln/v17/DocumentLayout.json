@@ -1,0 +1,275 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\dto\\folder\\errormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\dto\\folder\\errormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\repositories\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\repositories\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\interfaces\\itransactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\interfaces\\itransactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\log4net.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\log4net.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\customexception\\unauthorizeduserexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\customexception\\unauthorizeduserexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\dto\\responsedto\\successregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\dto\\responsedto\\successregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\dto\\responsedto\\successlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\dto\\responsedto\\successlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\dto\\requestdto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\dto\\requestdto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\dto\\requestdto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\dto\\requestdto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ErrorModel.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\Folder\\ErrorModel.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\DTO\\Folder\\ErrorModel.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\Folder\\ErrorModel.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\DTO\\Folder\\ErrorModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T17:09:39.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAYwCAAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T17:07:27.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TransactionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Repositories\\TransactionRepository.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Repositories\\TransactionRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Repositories\\TransactionRepository.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Repositories\\TransactionRepository.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAIwAkAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T17:05:31.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ITransactionService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Interfaces\\ITransactionService.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Interfaces\\ITransactionService.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Interfaces\\ITransactionService.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Interfaces\\ITransactionService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T17:04:45.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "log4net.config",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\log4net.config",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\log4net.config",
+              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\log4net.config",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\log4net.config",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-07-24T16:48:06.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Program.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Program.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Program.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T16:37:50.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UnAuthorizedUserException.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\CustomException\\UnAuthorizedUserException.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\CustomException\\UnAuthorizedUserException.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\CustomException\\UnAuthorizedUserException.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\CustomException\\UnAuthorizedUserException.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAAAUAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T16:36:17.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Services\\AuthService.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Services\\AuthService.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAewD4AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T16:30:39.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Services\\TokenService.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Services\\TokenService.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwBoAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T16:22:37.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SuccessRegisterDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\SuccessRegisterDTO.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\SuccessRegisterDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\SuccessRegisterDTO.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\SuccessRegisterDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T16:20:14.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SuccessLoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\SuccessLoginDTO.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\SuccessLoginDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\SuccessLoginDTO.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\SuccessLoginDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T16:19:59.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RegisterDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\RequestDTO\\RegisterDTO.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\DTO\\RequestDTO\\RegisterDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\RequestDTO\\RegisterDTO.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\DTO\\RequestDTO\\RegisterDTO.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAwwAsAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T16:18:43.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\RequestDTO\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\DTO\\RequestDTO\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\RequestDTO\\LoginDTO.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\DTO\\RequestDTO\\LoginDTO.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T16:18:13.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Interfaces\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Interfaces\\IAuthService.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAkAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T16:15:18.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ITokenService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Interfaces\\ITokenService.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Interfaces\\ITokenService.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Interfaces\\ITokenService.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Interfaces\\ITokenService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T16:14:26.186Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
