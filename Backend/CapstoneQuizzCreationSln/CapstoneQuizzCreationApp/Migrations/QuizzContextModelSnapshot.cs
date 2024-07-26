@@ -30,6 +30,9 @@ namespace CapstoneQuizzCreationApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CertificateId"), 1L, 1);
 
+                    b.Property<int>("MaxObtainedScore")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("ProvidedDate")
                         .HasColumnType("datetime2");
 
@@ -63,6 +66,9 @@ namespace CapstoneQuizzCreationApp.Migrations
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
 
                     b.Property<int>("QuestionCount")
                         .HasColumnType("int");
@@ -103,9 +109,17 @@ namespace CapstoneQuizzCreationApp.Migrations
                     b.Property<int>("TestId")
                         .HasColumnType("int");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UsserId")
+                        .HasColumnType("int");
+
                     b.HasKey("FavouriteId");
 
                     b.HasIndex("TestId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Favourites");
                 });
@@ -122,7 +136,7 @@ namespace CapstoneQuizzCreationApp.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("QuestionId")
+                    b.Property<int>("QuestionId")
                         .HasColumnType("int");
 
                     b.HasKey("OptionId");
@@ -140,8 +154,12 @@ namespace CapstoneQuizzCreationApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("QuestionId"), 1L, 1);
 
-                    b.Property<int>("CorrectAnswerId")
-                        .HasColumnType("int");
+                    b.Property<string>("CorrectAnswer")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
 
                     b.Property<int>("Points")
                         .HasColumnType("int");
@@ -172,7 +190,10 @@ namespace CapstoneQuizzCreationApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SubmissionId"), 1L, 1);
 
-                    b.Property<DateTime>("SubmissionDate")
+                    b.Property<DateTime>("StartTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("SubmissionTime")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("TestId")
@@ -210,8 +231,8 @@ namespace CapstoneQuizzCreationApp.Migrations
                     b.Property<bool>("IsMarked")
                         .HasColumnType("bit");
 
-                    b.Property<int>("OptionId")
-                        .HasColumnType("int");
+                    b.Property<string>("Option")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("QuestionId")
                         .HasColumnType("int");
@@ -221,13 +242,51 @@ namespace CapstoneQuizzCreationApp.Migrations
 
                     b.HasKey("AnswerId");
 
-                    b.HasIndex("OptionId");
-
                     b.HasIndex("QuestionId");
 
                     b.HasIndex("SubmissionId");
 
                     b.ToTable("SubmissionAnswers");
+                });
+
+            modelBuilder.Entity("CapstoneQuizzCreationApp.Models.TestHistory", b =>
+                {
+                    b.Property<int>("HistoryId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("HistoryId"), 1L, 1);
+
+                    b.Property<int>("CertificateId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsPassed")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("LastSubmissionId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("LatesttestEndTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("MaxObtainedScore")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TestId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("HistoryId");
+
+                    b.HasIndex("CertificateId");
+
+                    b.HasIndex("TestId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("TestHistories");
                 });
 
             modelBuilder.Entity("CapstoneQuizzCreationApp.Models.User", b =>
@@ -324,7 +383,15 @@ namespace CapstoneQuizzCreationApp.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("CapstoneQuizzCreationApp.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("CertificationTest");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("CapstoneQuizzCreationApp.Models.Option", b =>
@@ -332,7 +399,8 @@ namespace CapstoneQuizzCreationApp.Migrations
                     b.HasOne("CapstoneQuizzCreationApp.Models.Question", "Question")
                         .WithMany("Options")
                         .HasForeignKey("QuestionId")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.Navigation("Question");
                 });
@@ -340,9 +408,9 @@ namespace CapstoneQuizzCreationApp.Migrations
             modelBuilder.Entity("CapstoneQuizzCreationApp.Models.Question", b =>
                 {
                     b.HasOne("CapstoneQuizzCreationApp.Models.CertificationTest", "CertificationTest")
-                        .WithMany()
+                        .WithMany("Questions")
                         .HasForeignKey("TestId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("CertificationTest");
@@ -369,12 +437,6 @@ namespace CapstoneQuizzCreationApp.Migrations
 
             modelBuilder.Entity("CapstoneQuizzCreationApp.Models.SubmissionAnswer", b =>
                 {
-                    b.HasOne("CapstoneQuizzCreationApp.Models.Option", "Option")
-                        .WithMany()
-                        .HasForeignKey("OptionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("CapstoneQuizzCreationApp.Models.Question", "Question")
                         .WithMany()
                         .HasForeignKey("QuestionId")
@@ -382,16 +444,41 @@ namespace CapstoneQuizzCreationApp.Migrations
                         .IsRequired();
 
                     b.HasOne("CapstoneQuizzCreationApp.Models.Submission", "Submission")
-                        .WithMany()
+                        .WithMany("SubmissionAnswers")
                         .HasForeignKey("SubmissionId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Option");
-
                     b.Navigation("Question");
 
                     b.Navigation("Submission");
+                });
+
+            modelBuilder.Entity("CapstoneQuizzCreationApp.Models.TestHistory", b =>
+                {
+                    b.HasOne("CapstoneQuizzCreationApp.Models.Certificate", "Certificate")
+                        .WithMany()
+                        .HasForeignKey("CertificateId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("CapstoneQuizzCreationApp.Models.CertificationTest", "CertificationTest")
+                        .WithMany()
+                        .HasForeignKey("TestId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CapstoneQuizzCreationApp.Models.User", "User")
+                        .WithMany("TestHistories")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Certificate");
+
+                    b.Navigation("CertificationTest");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("CapstoneQuizzCreationApp.Models.UserCredential", b =>
@@ -405,9 +492,24 @@ namespace CapstoneQuizzCreationApp.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("CapstoneQuizzCreationApp.Models.CertificationTest", b =>
+                {
+                    b.Navigation("Questions");
+                });
+
             modelBuilder.Entity("CapstoneQuizzCreationApp.Models.Question", b =>
                 {
                     b.Navigation("Options");
+                });
+
+            modelBuilder.Entity("CapstoneQuizzCreationApp.Models.Submission", b =>
+                {
+                    b.Navigation("SubmissionAnswers");
+                });
+
+            modelBuilder.Entity("CapstoneQuizzCreationApp.Models.User", b =>
+                {
+                    b.Navigation("TestHistories");
                 });
 #pragma warning restore 612, 618
         }

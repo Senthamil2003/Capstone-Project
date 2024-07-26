@@ -8,10 +8,10 @@ namespace CapstoneQuizzCreationApp.Models
         [Key]
         public int OptionId { get; set; }
         public string OptionName { get; set; }
-        public int? QuestionId { get; set; }
+        public int QuestionId { get; set; }
 
         [ForeignKey("QuestionId")]
-        public Question? Question { get; set; }
+        public Question Question { get; set; }
 
     }
 }

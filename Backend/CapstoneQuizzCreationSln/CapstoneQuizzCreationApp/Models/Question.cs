@@ -11,10 +11,14 @@ namespace CapstoneQuizzCreationApp.Models
         public string QuestionDescription { get; set; }
         public int Points { get; set; }
         public string QuestionType { get; set; }
-        public int CorrectAnswerId { get; set; }
+        public string CorrectAnswer { get; set; }
+        public bool IsActive { get; set; }
+
 
         [ForeignKey("TestId")]
         public CertificationTest CertificationTest { get; set; }
+
+      
 
         public ICollection<Option> Options { get; set; }
 

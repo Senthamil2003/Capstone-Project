@@ -19,17 +19,17 @@ namespace CapstoneQuizzCreationApp.Context
         public DbSet<Question> Questions { get; set; }
         public DbSet<Submission> Submissions { get; set; }
         public DbSet<SubmissionAnswer> SubmissionAnswers { get; set; }
+        public DbSet<TestHistory> TestHistories { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            // Configure Certificate relationships
             modelBuilder.Entity<Certificate>()
-         .HasOne(c => c.Submission)
-         .WithMany()
-         .HasForeignKey(c => c.SubmissionId)
-         .OnDelete(DeleteBehavior.Restrict)
-         .IsRequired();
+               .HasOne(c => c.Submission)
+               .WithMany()
+               .HasForeignKey(c => c.SubmissionId)
+               .OnDelete(DeleteBehavior.Restrict)
+               .IsRequired();
 
-            // Certificate to User
             modelBuilder.Entity<Certificate>()
                 .HasOne(c => c.User)
                 .WithMany()
@@ -37,7 +37,6 @@ namespace CapstoneQuizzCreationApp.Context
                 .OnDelete(DeleteBehavior.Restrict)
                 .IsRequired();
 
-            // Certificate to CertificationTest
             modelBuilder.Entity<Certificate>()
                 .HasOne(c => c.CertificationTest)
                 .WithMany()
@@ -45,7 +44,7 @@ namespace CapstoneQuizzCreationApp.Context
                 .OnDelete(DeleteBehavior.Restrict)
                 .IsRequired();
 
-            // Submission to User
+            // Configure Submission relationships
             modelBuilder.Entity<Submission>()
                 .HasOne(s => s.User)
                 .WithMany()
@@ -53,21 +52,38 @@ namespace CapstoneQuizzCreationApp.Context
                 .OnDelete(DeleteBehavior.Restrict)
                 .IsRequired();
 
-            // Submission to CertificationTest
             modelBuilder.Entity<Submission>()
                 .HasOne(s => s.CertificationTest)
                 .WithMany()
                 .HasForeignKey(s => s.TestId)
                 .OnDelete(DeleteBehavior.Restrict)
                 .IsRequired();
+
+            // Configure Question-Option relationship
             modelBuilder.Entity<Option>()
-             .HasOne(o => o.Question)
-             .WithMany(q => q.Options)
-             .HasForeignKey(o => o.QuestionId)
-             .OnDelete(DeleteBehavior.Restrict);
-            
+                .HasOne(o => o.Question)
+                .WithMany(q => q.Options)
+                .HasForeignKey(o => o.QuestionId)
+                .OnDelete(DeleteBehavior.Restrict);
 
+            // Configure Question relationships
+            modelBuilder.Entity<Question>()
+                .HasOne(q => q.CertificationTest)
+                .WithMany(c => c.Questions)
+                .HasForeignKey(q => q.TestId)
+                .OnDelete(DeleteBehavior.Restrict)
+                .IsRequired();
+            modelBuilder.Entity<TestHistory>()
+            .HasOne(th => th.Certificate)
+            .WithMany()
+            .HasForeignKey(th => th.CertificateId)
+            .OnDelete(DeleteBehavior.Restrict);
 
+            //modelBuilder.Entity<Question>()
+            //    .HasOne(q => q.Option)
+            //    .WithMany()
+            //    .HasForeignKey(q => q.CorrectAnswerId)
+            //    .OnDelete(DeleteBehavior.Restrict);
 
         }
     }

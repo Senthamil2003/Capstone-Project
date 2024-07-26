@@ -9,15 +9,16 @@ namespace CapstoneQuizzCreationApp.Models
         public int AnswerId { get; set; }
         public int SubmissionId { get; set; }
         public int QuestionId { get; set; }
-        public int OptionId {  get; set; }
+        public string? Option {  get; set; }
         public bool IsCorrect { get; set; }=false;
         public bool IsMarked { get; set; }=false;
         [ForeignKey("SubmissionId")]
         public Submission Submission { get; set; }
+
         [ForeignKey("QuestionId")]
         public Question Question { get; set; }
 
-        [ForeignKey("OptionId")]
-        public Option Option { get; set; }  
+        //[ForeignKey("OptionId")]
+        //public Option? Option { get; set; }  
     }
 }

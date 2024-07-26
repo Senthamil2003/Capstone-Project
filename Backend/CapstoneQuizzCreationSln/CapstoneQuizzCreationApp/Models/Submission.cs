@@ -7,7 +7,8 @@ namespace CapstoneQuizzCreationApp.Models
     {
         [Key] 
         public int SubmissionId { get; set; }
-        public DateTime SubmissionDate { get; set; }
+        public DateTime SubmissionTime { get; set; }
+        public DateTime StartTime { get; set; }
         public int TotalScore { get; set; }
         public double TimeTaken { get; set; }
 
@@ -18,6 +19,7 @@ namespace CapstoneQuizzCreationApp.Models
 
         [ForeignKey("TestId")]
         public CertificationTest CertificationTest { get; set; }
+        public ICollection<SubmissionAnswer> SubmissionAnswers { get; set; }
 
 
     }
