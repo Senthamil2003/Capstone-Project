@@ -8,6 +8,7 @@
         public int MaxObtainedScore { get; set; }
         public bool IsPassed { get; set; }
         public int CertificateId { get; set; }
+        public double TotalTimeTaken { get; set; }
 
     }
 }

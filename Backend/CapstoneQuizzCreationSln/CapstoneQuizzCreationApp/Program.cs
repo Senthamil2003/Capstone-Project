@@ -54,6 +54,7 @@ namespace CapstoneQuizzCreationApp
             builder.Services.AddScoped<CertificationTestQuestionRepository, CertificationTestQuestionRepository>();
             builder.Services.AddScoped<SubmissionTestQuestionRepository, SubmissionTestQuestionRepository>();
             builder.Services.AddScoped<SubmissionAnswerQuestionOnly, SubmissionAnswerQuestionOnly>();
+            builder.Services.AddScoped<HistoryWithUserRepository, HistoryWithUserRepository>();
             builder.Services.AddScoped<UserTestHIstory, UserTestHIstory>();
 
 

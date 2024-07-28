@@ -42,6 +42,9 @@ namespace CapstoneQuizzCreationApp.Migrations
                     b.Property<int>("TestId")
                         .HasColumnType("int");
 
+                    b.Property<double>("TimeTaken")
+                        .HasColumnType("float");
+
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
@@ -70,7 +73,10 @@ namespace CapstoneQuizzCreationApp.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<int>("QuestionCount")
+                    b.Property<double>("PassCount")
+                        .HasColumnType("float");
+
+                    b.Property<int>("QuestionNeedTotake")
                         .HasColumnType("int");
 
                     b.Property<int>("RetakeWaitDays")
@@ -89,6 +95,9 @@ namespace CapstoneQuizzCreationApp.Migrations
 
                     b.Property<double>("TestTakenCount")
                         .HasColumnType("float");
+
+                    b.Property<int>("TotalQuestionCount")
+                        .HasColumnType("int");
 
                     b.HasKey("TestId");
 
@@ -190,6 +199,15 @@ namespace CapstoneQuizzCreationApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SubmissionId"), 1L, 1);
 
+                    b.Property<bool>("IsPassed")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsSubmited")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("ObtainedScore")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("StartTime")
                         .HasColumnType("datetime2");
 
@@ -257,13 +275,13 @@ namespace CapstoneQuizzCreationApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("HistoryId"), 1L, 1);
 
-                    b.Property<int>("CertificateId")
+                    b.Property<int?>("CertificateId")
                         .HasColumnType("int");
 
                     b.Property<bool>("IsPassed")
                         .HasColumnType("bit");
 
-                    b.Property<int>("LastSubmissionId")
+                    b.Property<int>("LatestSubmissionId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("LatesttestEndTime")
@@ -272,8 +290,17 @@ namespace CapstoneQuizzCreationApp.Migrations
                     b.Property<int>("MaxObtainedScore")
                         .HasColumnType("int");
 
+                    b.Property<int?>("PassSubmissionId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("SubmissionTIme")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("TestId")
                         .HasColumnType("int");
+
+                    b.Property<double?>("TimeTaken")
+                        .HasColumnType("float");
 
                     b.Property<int>("UserId")
                         .HasColumnType("int");
@@ -281,6 +308,8 @@ namespace CapstoneQuizzCreationApp.Migrations
                     b.HasKey("HistoryId");
 
                     b.HasIndex("CertificateId");
+
+                    b.HasIndex("LatestSubmissionId");
 
                     b.HasIndex("TestId");
 
@@ -459,7 +488,12 @@ namespace CapstoneQuizzCreationApp.Migrations
                     b.HasOne("CapstoneQuizzCreationApp.Models.Certificate", "Certificate")
                         .WithMany()
                         .HasForeignKey("CertificateId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.HasOne("CapstoneQuizzCreationApp.Models.Submission", "Submission")
+                        .WithMany()
+                        .HasForeignKey("LatestSubmissionId")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("CapstoneQuizzCreationApp.Models.CertificationTest", "CertificationTest")
@@ -477,6 +511,8 @@ namespace CapstoneQuizzCreationApp.Migrations
                     b.Navigation("Certificate");
 
                     b.Navigation("CertificationTest");
+
+                    b.Navigation("Submission");
 
                     b.Navigation("User");
                 });

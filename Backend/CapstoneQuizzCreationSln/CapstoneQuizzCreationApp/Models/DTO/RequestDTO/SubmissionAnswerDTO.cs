@@ -4,7 +4,7 @@
     {
         public int UserId { get; set; }
         public int SubmissionId { get; set;}
-        public DateTime FinishTime { get; set; }
+        public DateTime FinishTime { get; set; }=DateTime.Now;
 
     }
 

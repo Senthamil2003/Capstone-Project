@@ -10,7 +10,9 @@ namespace CapstoneQuizzCreationApp.Models
         public string TestDescription { get; set; }
         public DateTime CreatedDate { get; set; }
         public double TestTakenCount { get; set; }
-        public int QuestionCount { get; set; }
+        public double PassCount { get; set; }
+        public int TotalQuestionCount { get; set; }
+        public int QuestionNeedTotake {  get; set; }
         public int RetakeWaitDays { get; set; }
         public int TestDurationMinutes { get; set; }
         public bool IsActive { get; set; }

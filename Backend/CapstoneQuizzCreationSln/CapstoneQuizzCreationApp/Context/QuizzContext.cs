@@ -43,6 +43,7 @@ namespace CapstoneQuizzCreationApp.Context
                 .HasForeignKey(c => c.TestId)
                 .OnDelete(DeleteBehavior.Restrict)
                 .IsRequired();
+          
 
             // Configure Submission relationships
             modelBuilder.Entity<Submission>()

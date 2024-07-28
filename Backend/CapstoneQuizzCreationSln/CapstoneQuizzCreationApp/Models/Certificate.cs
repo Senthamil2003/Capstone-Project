@@ -11,6 +11,8 @@ namespace CapstoneQuizzCreationApp.Models
         public int TestId { get; set; }
         public int SubmissionId { get; set; }
         public int MaxObtainedScore { get; set; }
+        public double TimeTaken { get; set; }
+
         public DateTime ProvidedDate { get; set; }
         [ForeignKey("UserId")]
         public User User { get; set; }

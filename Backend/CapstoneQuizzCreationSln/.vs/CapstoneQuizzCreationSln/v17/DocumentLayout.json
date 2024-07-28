@@ -3,172 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Migrations\\20240726163232_certificate-update1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CapstoneQuizzCreationApp\\Migrations\\20240726163232_certificate-update1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\certificate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\certificate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\context\\quizzcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\context\\quizzcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\testhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\testhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Migrations\\20240726162557_certificate-update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CapstoneQuizzCreationApp\\Migrations\\20240726162557_certificate-update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\services\\testservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\services\\testservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\dto\\responsedto\\testresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\dto\\responsedto\\testresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\dto\\responsedto\\testsubmissiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\dto\\responsedto\\testsubmissiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\submission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\submission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\repositories\\generalrepository\\certificaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\repositories\\generalrepository\\certificaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\dto\\requestdto\\submissionanswerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\dto\\requestdto\\submissionanswerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\usercredential.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\usercredential.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\submissionanswer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\submissionanswer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\favourite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\favourite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\certificationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\certificationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\repositories\\joinedrepository\\submissionanswerquestiononly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\repositories\\joinedrepository\\submissionanswerquestiononly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\repositories\\joinedrepository\\submissiontestquestionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\repositories\\joinedrepository\\submissiontestquestionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\repositories\\generalrepository\\submissionanswerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\repositories\\generalrepository\\submissionanswerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\dto\\responsedto\\successsynchroniedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\dto\\responsedto\\successsynchroniedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\dto\\responsedto\\certificatedatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\dto\\responsedto\\certificatedatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\interfaces\\itestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\interfaces\\itestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\dto\\responsedto\\questionwithexpirydate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\dto\\responsedto\\questionwithexpirydate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\dto\\responsedto\\testquestiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\dto\\responsedto\\testquestiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\dto\\requestdto\\synchronousdatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\dto\\requestdto\\synchronousdatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Migrations\\20240726090832_updatedDb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CapstoneQuizzCreationApp\\Migrations\\20240726090832_updatedDb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\dto\\responsedto\\optiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\dto\\responsedto\\optiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\dto\\requestdto\\submitanswerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\dto\\requestdto\\submitanswerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Migrations\\20240726042036_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CapstoneQuizzCreationApp\\Migrations\\20240726042036_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\dto\\requestdto\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\dto\\requestdto\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\repositories\\generalrepository\\questionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\repositories\\generalrepository\\questionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\interfaces\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\interfaces\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\repositories\\generalrepository\\submissionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\repositories\\generalrepository\\submissionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\repositories\\generalrepository\\testhistoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\repositories\\generalrepository\\testhistoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\migrations\\20240726093521_init1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\migrations\\20240726093521_init1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\migrations\\20240726092545_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\migrations\\20240726092545_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|c:\\users\\vc\\documents\\capstoneproject\\backend\\capstonequizzcreationsln\\capstonequizzcreationapp\\models\\dto\\responsedto\\teststatsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\CapstoneQuizzCreationApp.csproj|solutionrelative:capstonequizzcreationapp\\models\\dto\\responsedto\\teststatsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -178,533 +38,98 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20240726163232_certificate-update1.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Migrations\\20240726163232_certificate-update1.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Migrations\\20240726163232_certificate-update1.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Migrations\\20240726163232_certificate-update1.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Migrations\\20240726163232_certificate-update1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T16:32:32.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20240726162557_certificate-update.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Migrations\\20240726162557_certificate-update.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Migrations\\20240726162557_certificate-update.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Migrations\\20240726162557_certificate-update.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Migrations\\20240726162557_certificate-update.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAgAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T16:25:57.659Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Program.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Program.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Program.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Program.cs",
-              "ViewState": "AQIAAFwAAAAAAAAAAAAQwDcAAABhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T16:25:16.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TestService.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Services\\TestService.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Services\\TestService.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Services\\TestService.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Services\\TestService.cs",
-              "ViewState": "AQIAAEUBAAAAAAAAAAAAABkBAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T11:21:38.424Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Certificate.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\Certificate.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\Certificate.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\Certificate.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\Certificate.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAcwBcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T14:59:49.814Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "QuizzContext.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Context\\QuizzContext.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Context\\QuizzContext.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Context\\QuizzContext.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Context\\QuizzContext.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAAAE8AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T14:26:29.868Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "TestHistory.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\TestHistory.cs",
               "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\TestHistory.cs",
               "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\TestHistory.cs",
               "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\TestHistory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAABAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAUwA0AAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T14:58:35.508Z",
+              "WhenOpened": "2024-07-28T16:34:03.798Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TestResultDTO.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\TestResultDTO.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\TestResultDTO.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\TestResultDTO.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\TestResultDTO.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAUAAAASAAAA",
+              "DocumentIndex": 4,
+              "Title": "CertificateDataDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\CertificateDataDTO.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\CertificateDataDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\CertificateDataDTO.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\CertificateDataDTO.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T16:06:38.426Z",
+              "WhenOpened": "2024-07-28T16:24:58.212Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Submission.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\Submission.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\Submission.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\Submission.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\Submission.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAA7wAkAAAAmAAAA",
+              "DocumentIndex": 3,
+              "Title": "TestSubmissionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\TestSubmissionDTO.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\TestSubmissionDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\TestSubmissionDTO.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\TestSubmissionDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T15:39:42.077Z",
+              "WhenOpened": "2024-07-28T14:29:09.258Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SubmissionAnswerDTO.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\RequestDTO\\SubmissionAnswerDTO.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\DTO\\RequestDTO\\SubmissionAnswerDTO.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\RequestDTO\\SubmissionAnswerDTO.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\DTO\\RequestDTO\\SubmissionAnswerDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAIAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T15:21:48.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CertificateRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Repositories\\GeneralRepository\\CertificateRepository.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Repositories\\GeneralRepository\\CertificateRepository.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Repositories\\GeneralRepository\\CertificateRepository.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Repositories\\GeneralRepository\\CertificateRepository.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAA7wAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T15:55:30.045Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UserCredential.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\UserCredential.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\UserCredential.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\UserCredential.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\UserCredential.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAA5wAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T15:02:28.638Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\User.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\User.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T15:02:27.296Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Favourite.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\Favourite.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\Favourite.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\Favourite.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\Favourite.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBAAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T15:00:04.693Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CertificationTest.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\CertificationTest.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\CertificationTest.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\CertificationTest.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\CertificationTest.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T14:59:53.001Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "SubmissionAnswer.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\SubmissionAnswer.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\SubmissionAnswer.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\SubmissionAnswer.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\SubmissionAnswer.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAA3wBAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T11:28:08.47Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Services\\AuthService.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Services\\AuthService.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAAwA4AAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T13:25:00.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "SubmissionAnswerQuestionOnly.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Repositories\\JoinedRepository\\SubmissionAnswerQuestionOnly.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Repositories\\JoinedRepository\\SubmissionAnswerQuestionOnly.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Repositories\\JoinedRepository\\SubmissionAnswerQuestionOnly.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Repositories\\JoinedRepository\\SubmissionAnswerQuestionOnly.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAuwBcAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T13:38:36.85Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Services\\TokenService.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Services\\TokenService.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Services\\TokenService.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Services\\TokenService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAEIAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T13:50:29.787Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AdminService.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Services\\AdminService.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Services\\AdminService.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Services\\AdminService.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Services\\AdminService.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAACAAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T16:57:14.667Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "SubmissionTestQuestionRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Repositories\\JoinedRepository\\SubmissionTestQuestionRepository.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Repositories\\JoinedRepository\\SubmissionTestQuestionRepository.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Repositories\\JoinedRepository\\SubmissionTestQuestionRepository.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Repositories\\JoinedRepository\\SubmissionTestQuestionRepository.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAkwDYAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T15:33:12.623Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "TestController.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Controllers\\TestController.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Controllers\\TestController.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Controllers\\TestController.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Controllers\\TestController.cs",
-              "ViewState": "AQIAAGQAAAAAAAAAAAAAAEkAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T14:19:07.085Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAFkAAAAAAAAAAAAkwDcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T14:19:54.155Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Controllers\\AdminController.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAcwDAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T14:19:57.537Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 5,
               "Title": "ITestService.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Interfaces\\ITestService.cs",
               "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Interfaces\\ITestService.cs",
               "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Interfaces\\ITestService.cs",
               "RelativeToolTip": "CapstoneQuizzCreationApp\\Interfaces\\ITestService.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAswAkAAAA3AAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwA4AAABTAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T14:17:48.153Z"
+              "WhenOpened": "2024-07-28T14:14:22.38Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "SubmissionAnswerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Repositories\\GeneralRepository\\SubmissionAnswerRepository.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Repositories\\GeneralRepository\\SubmissionAnswerRepository.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Repositories\\GeneralRepository\\SubmissionAnswerRepository.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Repositories\\GeneralRepository\\SubmissionAnswerRepository.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAhwEgAAAAIAAAA",
+              "DocumentIndex": 0,
+              "Title": "TestController.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Controllers\\TestController.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Controllers\\TestController.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Controllers\\TestController.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Controllers\\TestController.cs",
+              "ViewState": "AQIAAMcAAAAAAAAAAAAuwNMAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T09:23:58.447Z"
+              "WhenOpened": "2024-07-28T14:14:18.045Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "SuccessSynchronieDTO.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\SuccessSynchronieDTO.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\SuccessSynchronieDTO.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\SuccessSynchronieDTO.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\SuccessSynchronieDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAlAAAA",
+              "DocumentIndex": 2,
+              "Title": "TestService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Services\\TestService.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Services\\TestService.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Services\\TestService.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Services\\TestService.cs",
+              "ViewState": "AQIAAKkBAAAAAAAAAAAuwLIBAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T10:09:41.428Z"
+              "WhenOpened": "2024-07-28T13:37:39.294Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "QuestionWithExpiryDate.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\QuestionWithExpiryDate.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\QuestionWithExpiryDate.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\QuestionWithExpiryDate.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\QuestionWithExpiryDate.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAUAAAAjAAAA",
+              "DocumentIndex": 6,
+              "Title": "TestStatsDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\TestStatsDTO.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\TestStatsDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\TestStatsDTO.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\TestStatsDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T04:32:04.775Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "SynchronousDataDTO.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\RequestDTO\\SynchronousDataDTO.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\DTO\\RequestDTO\\SynchronousDataDTO.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\RequestDTO\\SynchronousDataDTO.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\DTO\\RequestDTO\\SynchronousDataDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T09:57:35.119Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "TestQuestionDTO.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\TestQuestionDTO.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\TestQuestionDTO.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\TestQuestionDTO.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\TestQuestionDTO.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAuwAkAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T11:31:03.071Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "20240726093521_init1.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Migrations\\20240726093521_init1.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Migrations\\20240726093521_init1.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Migrations\\20240726093521_init1.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Migrations\\20240726093521_init1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T09:35:21.288Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "20240726092545_init.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Migrations\\20240726092545_init.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Migrations\\20240726092545_init.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Migrations\\20240726092545_init.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Migrations\\20240726092545_init.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T09:25:46.296Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "20240726090832_updatedDb.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Migrations\\20240726090832_updatedDb.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Migrations\\20240726090832_updatedDb.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Migrations\\20240726090832_updatedDb.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Migrations\\20240726090832_updatedDb.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAAAC4AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T09:08:32.904Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Question.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\Question.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\Question.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\Question.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\Question.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAwwBIAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T17:32:17.263Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "OptionDTO.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\OptionDTO.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\OptionDTO.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\OptionDTO.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\OptionDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T11:36:29.627Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "SubmitAnswerDto.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\RequestDTO\\SubmitAnswerDto.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\DTO\\RequestDTO\\SubmitAnswerDto.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\RequestDTO\\SubmitAnswerDto.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\DTO\\RequestDTO\\SubmitAnswerDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T06:58:09.305Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "20240726042036_init.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Migrations\\20240726042036_init.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Migrations\\20240726042036_init.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Migrations\\20240726042036_init.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Migrations\\20240726042036_init.cs",
-              "ViewState": "AQIAAGsAAAAAAAAAAAAQwHwAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T04:20:37.219Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "QuestionRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Repositories\\GeneralRepository\\QuestionRepository.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Repositories\\GeneralRepository\\QuestionRepository.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Repositories\\GeneralRepository\\QuestionRepository.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Repositories\\GeneralRepository\\QuestionRepository.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T04:13:11.543Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "QuestionDTO.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\RequestDTO\\QuestionDTO.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\DTO\\RequestDTO\\QuestionDTO.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Models\\DTO\\RequestDTO\\QuestionDTO.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\DTO\\RequestDTO\\QuestionDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T04:13:56.755Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "SubmissionRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Repositories\\GeneralRepository\\SubmissionRepository.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Repositories\\GeneralRepository\\SubmissionRepository.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Repositories\\GeneralRepository\\SubmissionRepository.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Repositories\\GeneralRepository\\SubmissionRepository.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAQwFUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T14:27:05.546Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "IAdminService.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Interfaces\\IAdminService.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Interfaces\\IAdminService.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Interfaces\\IAdminService.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Interfaces\\IAdminService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T15:51:27.674Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "TestHistoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Repositories\\GeneralRepository\\TestHistoryRepository.cs",
-              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Repositories\\GeneralRepository\\TestHistoryRepository.cs",
-              "ToolTip": "C:\\Users\\VC\\Documents\\CapstoneProject\\Backend\\CapstoneQuizzCreationSln\\CapstoneQuizzCreationApp\\Repositories\\GeneralRepository\\TestHistoryRepository.cs",
-              "RelativeToolTip": "CapstoneQuizzCreationApp\\Repositories\\GeneralRepository\\TestHistoryRepository.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAgAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T14:26:43.004Z"
+              "WhenOpened": "2024-07-28T13:34:33.291Z",
+              "EditorCaption": ""
             }
           ]
         }

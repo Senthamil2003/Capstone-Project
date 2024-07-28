@@ -94,6 +94,135 @@ namespace CapstoneQuizzCreationApp.Controllers
                 return BadRequest(new ErrorModel(501, ex.Message));
             }
         }
+        [HttpPost("SubmitTest")]
+        [ProducesResponseType(typeof(TestResultDTO), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<TestResultDTO>> SubmitTest(SubmissionAnswerDTO data)
+        {
+            try
+            {
+                _logger.LogInformation("Received a user registration request.");
+
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogWarning("Invalid model state for the registration request.");
+                    return BadRequest(ModelState);
+                }
+
+                TestResultDTO result = await _testservice.SubmitAnswer(data);
+                _logger.LogInformation("User registered successfully.");
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"An error occurred during user registration: {ex.Message}");
+                return BadRequest(new ErrorModel(501, ex.Message));
+            }
+        }
+        [HttpGet("GetLeaderboard")]
+        [ProducesResponseType(typeof(List<LeaderBoardDTO>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<List<LeaderBoardDTO>>> Leaderboard(int TestId)
+        {
+            try
+            {
+                _logger.LogInformation("Received a user registration request.");
+
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogWarning("Invalid model state for the registration request.");
+                    return BadRequest(ModelState);
+                }
+
+                List<LeaderBoardDTO> result = await _testservice.GetLeaderBoard(TestId);
+                _logger.LogInformation("User registered successfully.");
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"An error occurred during user registration: {ex.Message}");
+                return BadRequest(new ErrorModel(501, ex.Message));
+            }
+        }
+        [HttpGet("GetStats")]
+        [ProducesResponseType(typeof(TestStatsDTO), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<TestStatsDTO>> GetStats(int TestId, int UserId)
+        {
+            try
+            {
+                _logger.LogInformation("Received a user registration request.");
+
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogWarning("Invalid model state for the registration request.");
+                    return BadRequest(ModelState);
+                }
+
+                TestStatsDTO result = await _testservice.GetTestStats(TestId, UserId);
+                _logger.LogInformation("User registered successfully.");
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"An error occurred during user registration: {ex.Message}");
+                return BadRequest(new ErrorModel(501, ex.Message));
+            }
+        }
+        [HttpGet("GetSubmissions")]
+        [ProducesResponseType(typeof(List<TestSubmissionDTO>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<List<TestSubmissionDTO>>> GetSubmissions(int TestId, int UserId)
+        {
+            try
+            {
+                _logger.LogInformation("Received a user registration request.");
+
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogWarning("Invalid model state for the registration request.");
+                    return BadRequest(ModelState);
+                }
+
+                List<TestSubmissionDTO> result = await _testservice.GetUserSubmission(TestId, UserId);
+                _logger.LogInformation("User registered successfully.");
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"An error occurred during user registration: {ex.Message}");
+                return BadRequest(new ErrorModel(501, ex.Message));
+            }
+        }
+        [HttpGet("GetTestCertificate")]
+        [ProducesResponseType(typeof(CertificateDataDTO), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<CertificateDataDTO>> GetTestCertificate(int TestId, int UserId)
+        {
+            try
+            {
+                _logger.LogInformation("Received a user registration request.");
+
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogWarning("Invalid model state for the registration request.");
+                    return BadRequest(ModelState);
+                }
+
+                CertificateDataDTO result = await _testservice.GetCertificateData(UserId,TestId);
+                _logger.LogInformation("User registered successfully.");
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"An error occurred during user registration: {ex.Message}");
+                return BadRequest(new ErrorModel(501, ex.Message));
+            }
+        }
+
+
+
+
 
 
     }

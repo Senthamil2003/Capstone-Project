@@ -73,13 +73,16 @@ namespace CapstoneQuizzCreationApp.Services
                     CertificationTest certificationTest = new CertificationTest()
                     {
                         CreatedDate = DateTime.Now,
-                        QuestionCount = createQuestion.questions.Count,
+                        TotalQuestionCount = createQuestion.questions.Count,
+                        QuestionNeedTotake = createQuestion.AttendQuestionCount,
                         RetakeWaitDays = createQuestion.RetakeWaitDays,
                         TestDescription = createQuestion.TestDescription,
                         TestDurationMinutes = createQuestion.TestDuration,
                         TestName = createQuestion.CertificationName,
                         TestTakenCount = 0,
                         IsActive = createQuestion.IsActive,
+                        PassCount=0,
+                        
                     };
                     await _certificationRepo.Add(certificationTest);
                     await CreateQuestion(createQuestion.questions, certificationTest.TestId);

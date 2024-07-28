@@ -23,6 +23,8 @@ namespace CapstoneQuizzCreationApp.Services
         private readonly IRepository<int,TestHistory> _testHistoryRepo;
         private readonly SubmissionAnswerQuestionOnly _submissionAnswerQuestionOnly;
         private readonly SubmissionTestQuestionRepository _submissionQuestionRepo;
+        private readonly HistoryWithUserRepository _historyWithUserRepo;
+        private readonly IRepository<int, User> _userRepository;
         public TestService(IRepository<int, Question> questionRepo,
             IRepository<int, Option> optionRepo,
             IRepository<int, Submission> submissionRepo,
@@ -34,7 +36,12 @@ namespace CapstoneQuizzCreationApp.Services
             SubmissionTestQuestionRepository submissionQuestionRepo,
             SubmissionAnswerQuestionOnly submissionAnswerQuestionOnly,
             IRepository<int, Certificate> certificateRepo,
-            IRepository<int, CertificationTest> certificateTestRepo)
+
+            IRepository<int, CertificationTest> certificateTestRepo,
+            HistoryWithUserRepository historyWithUserRepository,
+            IRepository<int,User> uerRepo
+
+            )
         {
             _questionRepo = questionRepo;
             _optionRepo = optionRepo;
@@ -48,6 +55,9 @@ namespace CapstoneQuizzCreationApp.Services
             _submissionAnswerQuestionOnly = submissionAnswerQuestionOnly;
             _certificateRepo = certificateRepo;
             _certificateTestRepo = certificateTestRepo;
+            _historyWithUserRepo=historyWithUserRepository;
+            _userRepository = uerRepo;
+
         }
         public async Task<QuestionWithExpiryDate> StartTest(int certificationTestId, int UserId)
         {
@@ -56,49 +66,59 @@ namespace CapstoneQuizzCreationApp.Services
                 try
                 {
                     TestHistory history = (await _userTestHIstory.Get(UserId)).TestHistories.FirstOrDefault(h => h.TestId == certificationTestId);
-
                     var test = (await _certificationTestQuestionRepo.Get(certificationTestId));
                     Random random = new Random();
                     var allquestions = test.Questions;
-                    var questions = allquestions.OrderBy(q => random.Next()).Take(10);
+                    var questions = allquestions.OrderBy(q => random.Next()).Take(test.QuestionNeedTotake);
                     DateTime now = DateTime.Now;
                     DateTime testEndTime = now.AddMinutes(test.TestDurationMinutes);
+                     if (history != null && DateTime.Now <= history.LatesttestEndTime)
+                    {
+                        return await ResumeTest(history.LatestSubmissionId, UserId);
+                    }
+                   else if (history != null)
+                    {
+                        DateTime retakedate = history.LatesttestEndTime.AddDays(test.RetakeWaitDays);
+                        if (DateTime.Now < retakedate)
+                        {
+                            throw new Exception("User already taken please wait till waiting time is over");
+                        }
+
+                    }
+                    
+                    
+              
                     Submission submission = new Submission()
                     {
                         SubmissionTime = testEndTime,
                         TestId = certificationTestId,
                         TimeTaken = 0,
-                        TotalScore = 0,
+                        TotalScore = test.QuestionNeedTotake,
+                        ObtainedScore=0,
                         UserId = UserId,
-                        StartTime=DateTime.Now, 
-
+                        StartTime=DateTime.Now,             
                     };
                     await _submissionRepo.Add(submission);
+
                     if (history != null)
                     {
-                        DateTime retakedate = history.LatesttestEndTime.AddDays(test.RetakeWaitDays);
-                        if (DateTime.Now < retakedate)
-                        {
-                            throw new Exception("User already taken please wait till waiting time");
-                        }
-                        else
-                        {
-                            history.LatesttestEndTime = DateTime.Now.AddMinutes(test.TestDurationMinutes);
-                            history.LastSubmissionId = submission.SubmissionId;
-                            await _testHistoryRepo.Update(history);
-                        }
+                        history.LatesttestEndTime = DateTime.Now.AddMinutes(test.TestDurationMinutes);
+                        history.LatestSubmissionId = submission.SubmissionId;
+                        await _testHistoryRepo.Update(history);
+                        
                     }
                     else
                     {
+                        test.TestTakenCount += 1;
                         TestHistory testHistory = new TestHistory()
                         {
                             UserId = UserId,
                             TestId = certificationTestId,
-                            LastSubmissionId = submission.SubmissionId,
-                            LatesttestEndTime = testEndTime
-
+                            LatestSubmissionId=submission.SubmissionId,
+                            LatesttestEndTime = testEndTime, 
                         };
                         await _testHistoryRepo.Add(testHistory);
+                        await _certificateTestRepo.Update(test);
                     }
                     List<TestQuestionDTO> questionDTOs = new List<TestQuestionDTO>();
                     foreach (var question in questions)
@@ -139,6 +159,7 @@ namespace CapstoneQuizzCreationApp.Services
                     await _transactionService.CommitTransactionAsync();
                     QuestionWithExpiryDate questionWithExpiryDate = new QuestionWithExpiryDate()
                     {
+                        SubmissionId=submission.SubmissionId,
                         TestEndTime = submission.SubmissionTime,
                         testQuestion = questionDTOs
                     };
@@ -165,6 +186,20 @@ namespace CapstoneQuizzCreationApp.Services
                 {
                     throw new Exception("Submission not found for user");
                 }
+                if(submission.IsSubmited)
+                {
+                    //QuestionWithExpiryDate questionWithExpiry = new QuestionWithExpiryDate()
+                    //{
+                    //    SubmissionId = submission.SubmissionId,
+                    //    IsSubmited = submission.IsSubmited,
+                    //    TestEndTime = submission.SubmissionTime,
+                    //    testQuestion = new List<TestQuestionDTO>(),
+
+                    //};
+                    //return questionWithExpiry;
+                    throw new Exception("Test is Already Submited");
+                }
+              
                 if(submission.SubmissionTime< DateTime.Now)
                 {
                     throw new Exception("Test is expired");
@@ -201,6 +236,7 @@ namespace CapstoneQuizzCreationApp.Services
                 }
                 return new QuestionWithExpiryDate
                 {
+                    SubmissionId = submission.SubmissionId,
                     TestEndTime = submission.SubmissionTime,
                     testQuestion = questionDTOs
                 };
@@ -249,6 +285,36 @@ namespace CapstoneQuizzCreationApp.Services
 
 
         }
+        //private async Task<TestResultDTO> ReturnSubmitedResult(Submission submission)
+        //{
+        //    try
+        //    {
+        //        TestHistory history = (await _userTestHIstory.Get(submission.UserId)).TestHistories.FirstOrDefault(h => h.TestId == submission.TestId);
+        //        int MaxObtainedScore = history.MaxObtainedScore;
+                
+
+
+        //        TestResultDTO testResult = new TestResultDTO()
+        //        {
+        //            IsPassed=submission.IsPassed,
+        //            MaxObtainedScore=MaxObtainedScore,
+        //            ObtainedScore=submission.ObtainedScore,
+        //            TotalScore=submission.TotalScore,
+        //            CertificateId=history.CertificateId??0,
+        //            TestName= (await _certificateTestRepo.Get(submission.TestId)).TestName,
+        //            TotalTimeTaken=submission.TimeTaken,
+
+        //        };
+        //        return testResult;  
+
+        //    }
+        //    catch
+        //    {
+        //        throw;
+
+        //    }
+
+        //}
         public async Task<TestResultDTO> SubmitAnswer(SubmissionAnswerDTO submissionAnswer)
         {
             using (var transaction = await _transactionService.BeginTransactionAsync())
@@ -256,11 +322,15 @@ namespace CapstoneQuizzCreationApp.Services
                 try
                 {
 
-                 Submission submission=  (await _submissionAnswerQuestionOnly.Get(submissionAnswer.SubmissionId));
+                    Submission submission=  (await _submissionAnswerQuestionOnly.Get(submissionAnswer.SubmissionId));
                     if (submission.UserId != submissionAnswer.UserId)
                     {
                         throw new SubmissionAnswerNotFoundException("No submission found for user");
 
+                    }
+                    if (submission.IsSubmited)
+                    {
+                        throw new Exception("Test is Already Submited");
                     }
                     int totalScore=0;
                     int certificateId =0;   
@@ -273,69 +343,81 @@ namespace CapstoneQuizzCreationApp.Services
                             obtainedScore += answer.Question.Points;
                         }
                     }
-                    submission.TotalScore= obtainedScore;
+                    submission.ObtainedScore= obtainedScore;
                     TimeSpan timeDifference = DateTime.Now - submission.StartTime;
                     submission.TimeTaken = timeDifference.TotalSeconds;
-                    await _submissionRepo.Update(submission);
+                    submission.IsSubmited = true;
+                   
                     TestHistory history= (await _userTestHIstory.Get(submissionAnswer.UserId)).TestHistories.FirstOrDefault(h=>h.TestId==submission.TestId);
-                    bool ispassed = false;
+                   
                     int MaxObtainedScore=obtainedScore;
-                    if ((obtainedScore / totalScore) * 100 > 60)
+                    double result = (Convert.ToDouble( obtainedScore) / Convert.ToDouble( totalScore)) * 100;
+                    
+                    if (result > 30)
                     {
+
+                        submission.IsPassed = true;
                         if (history.IsPassed)
                         {
-                            ispassed = true;
-                           Certificate certificate=await _certificateRepo.Get(history.CertificateId);
+                           
+                           Certificate certificate=await _certificateRepo.Get(history.CertificateId?? 0);
                            if(certificate.MaxObtainedScore < obtainedScore)
                             {
                                 certificate.MaxObtainedScore= obtainedScore;
                                 history.MaxObtainedScore = obtainedScore;
+                                history.PassSubmissionId = submission.SubmissionId;
+                                history.TimeTaken = submission.TimeTaken;
+                                history.SubmissionTIme = DateTime.Now;
                             }
                            certificateId=certificate.CertificateId;
                            MaxObtainedScore=certificate.MaxObtainedScore;
                            certificate.ProvidedDate= DateTime.Now;  
+                            certificate.TimeTaken=submission.TimeTaken;
                            await _certificateRepo.Update(certificate);
                             
                         }
                         else
                         {
-
+                           var test=await _certificateTestRepo.Get(submission.TestId);
+                            test.PassCount += 1;
+                          await  _certificationTestQuestionRepo.Update(test);    
                             Certificate certificate = new Certificate()
                             {
                                 ProvidedDate = DateTime.Now,
                                 SubmissionId = submission.SubmissionId,
                                 TestId = submission.TestId,
                                 UserId = submission.UserId,
+                                MaxObtainedScore=obtainedScore,
                             };
                             await _certificateRepo.Add(certificate);
                             history.IsPassed = true;
                             history.CertificateId=certificate.CertificateId;
                             history.MaxObtainedScore=certificate.MaxObtainedScore;
+                            history.PassSubmissionId = submission.SubmissionId;
+                            history.TimeTaken = submission.TimeTaken;
+                            history.SubmissionTIme=DateTime.Now;    
                             certificateId=certificate.CertificateId;
 
                         }
-                      
-                        await _testHistoryRepo.Update(history);
-                                            
+                                     
 
                     }
+                    await _submissionRepo.Update(submission);
+                    await _testHistoryRepo.Update(history);
                     TestResultDTO resultDTO = new TestResultDTO()
                     {
-                        IsPassed = ispassed,
+                        IsPassed = submission.IsPassed,
                         ObtainedScore = obtainedScore,
                         TotalScore = totalScore,
                         TestName= (await _certificateTestRepo.Get(submission.TestId)).TestName,
                         MaxObtainedScore = MaxObtainedScore,
                         CertificateId=certificateId,
-
+                        TotalTimeTaken=submission.TimeTaken,
                     };
-
                     
                     await _transactionService.CommitTransactionAsync();
 
-
                     return resultDTO;
-
 
                 }
                 catch
@@ -347,7 +429,151 @@ namespace CapstoneQuizzCreationApp.Services
 
             }
         }
+        public async Task<List<LeaderBoardDTO>> GetLeaderBoard(int testId)
+        {
+            try
+            {
+                
+                var testHistories = (await _historyWithUserRepo.Get())
+                    .Where(h => h.TestId == testId && h.IsPassed)
+                    .OrderByDescending(h => h.MaxObtainedScore)
+                    .ThenBy(h => h.TimeTaken)
+                    .ToList();
 
+                var result = testHistories
+                    .Select((item, index) => new LeaderBoardDTO
+                    {
+                        SubmissionTime = item.SubmissionTIme ?? DateTime.Now,
+                        MaxObtainedMark = item.MaxObtainedScore,
+                        Rank = index + 1,
+                        TimeTaken = item.TimeTaken ?? 0,
+                        UserId = item.UserId,
+                        UserName = item.User.Name
+                    })
+                    .ToList();
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("An error occurred while fetching the leaderboard.", ex);
+            }
+        }
+
+        public async Task<TestStatsDTO> GetTestStats(int userId, int testId)
+        {
+            try
+            {
+                
+                var history = (await _testHistoryRepo.Get())
+                    .Where(h => h.IsPassed && h.TestId == testId).ToList();
+                var userHistoryData = await _userTestHIstory.Get(userId);
+                var userHistory = userHistoryData.TestHistories.FirstOrDefault(h => h.TestId == testId);
+                var test = await _certificateTestRepo.Get(testId);
+
+                if (userHistory == null)
+                {
+                    throw new Exception("User test history not found.");
+                }
+
+                int rank = 1;
+
+                if (userHistory.IsPassed)
+                {
+                    rank = history.Count(h => h.MaxObtainedScore > userHistory.MaxObtainedScore) + 1;
+                }
+
+                TestStatsDTO testStats = new TestStatsDTO()
+                {
+                    IsPassed = userHistory.IsPassed,
+                    MaxMark = userHistory.MaxObtainedScore,
+                    MyRank = rank,
+                    PassCount = test.PassCount,
+                    TestTakenCount = test.TestTakenCount
+                };
+
+                return testStats;
+            }
+            catch (Exception ex)
+            {
+                // Log the exception (if a logging framework is in place)
+                throw ;
+            }
+        }
+
+
+        public async Task<List<TestSubmissionDTO>> GetUserSubmission(int userId,int testId)
+        {
+            try
+            {
+              var submissions=  (await _submissionRepo.Get()).Where(s=>s.UserId==userId && s.TestId==testId);
+                List<TestSubmissionDTO> submissionDTOs = new List<TestSubmissionDTO>();
+               foreach(var submission in submissions)
+                {
+                    TestSubmissionDTO testSubmissionDTO = new TestSubmissionDTO()
+                    {
+                        SubmissionDate = submission.SubmissionTime,
+                        SubmissionId = submission.SubmissionId,
+                        ObtainedScore = submission.ObtainedScore,
+                        IsPassed = submission.IsPassed,
+                        TimeTaken = submission.TimeTaken,
+                    };
+                    submissionDTOs.Add(testSubmissionDTO);
+                }
+                return submissionDTOs;
+
+            }
+            catch
+            {
+                throw;
+            }
+        }
+        public async Task<CertificateDataDTO> GetCertificateData(int userId,int testId)
+        {
+            try
+            {
+                var history = (await _userTestHIstory.Get(userId)).TestHistories.FirstOrDefault(h => h.TestId == testId);
+                CertificateDataDTO dataDTO = new CertificateDataDTO()
+                {
+                    IsPassed = false,
+                    CertificateId = 0,
+                    ProvidedDate = DateTime.Now,
+                    ObtainedScore = 0,
+                    CertificateTestName = "",
+                    TimeTaken = 0,
+                    UserName = ""
+                };
+                if (history == null)
+                {
+                    return dataDTO;
+
+                }
+                else if (!history.IsPassed)
+                {
+                    return dataDTO;
+                }
+                else
+                {
+                    var certificateTest = (await _certificateTestRepo.Get(history.TestId));
+                    dataDTO.ObtainedScore = history.MaxObtainedScore;
+                    dataDTO.IsPassed = true;
+                    dataDTO.TimeTaken = history.TimeTaken ??0;
+                    dataDTO.CertificateTestName = certificateTest.TestName;
+                    dataDTO.CertificateId = history.CertificateId ?? 0;
+                    dataDTO.UserName =( await _userRepository.Get(history.UserId)).Name;
+                    dataDTO.TotalMark=certificateTest.QuestionNeedTotake;
+                    return dataDTO;
+                }
+
+
+            }
+            catch
+            {
+                throw;
+            }
+      
+
+        } 
 
     }
 }
