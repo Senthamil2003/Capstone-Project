@@ -17,6 +17,7 @@ namespace CapstoneQuizzCreationApp.Models
         public int LatestSubmissionId { get; set; }
         public DateTime? SubmissionTIme { get; set; }
         public DateTime LatesttestEndTime { get; set; }
+     
 
         [ForeignKey("UserId")]   
         public User User { get; set; }

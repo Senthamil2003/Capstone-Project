@@ -82,6 +82,7 @@ namespace CapstoneQuizzCreationApp.Services
                         TestTakenCount = 0,
                         IsActive = createQuestion.IsActive,
                         PassCount=0,
+                        dificultyLeavel=createQuestion.DificultyLeavel,
                         
                     };
                     await _certificationRepo.Add(certificationTest);

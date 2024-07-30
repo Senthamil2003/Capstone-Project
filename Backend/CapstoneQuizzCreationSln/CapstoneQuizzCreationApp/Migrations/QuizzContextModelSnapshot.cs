@@ -99,6 +99,10 @@ namespace CapstoneQuizzCreationApp.Migrations
                     b.Property<int>("TotalQuestionCount")
                         .HasColumnType("int");
 
+                    b.Property<string>("dificultyLeavel")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("TestId");
 
                     b.ToTable("CertificationTests");
@@ -119,9 +123,6 @@ namespace CapstoneQuizzCreationApp.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UsserId")
                         .HasColumnType("int");
 
                     b.HasKey("FavouriteId");
@@ -413,9 +414,9 @@ namespace CapstoneQuizzCreationApp.Migrations
                         .IsRequired();
 
                     b.HasOne("CapstoneQuizzCreationApp.Models.User", "User")
-                        .WithMany()
+                        .WithMany("Favourites")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("CertificationTest");
@@ -545,6 +546,8 @@ namespace CapstoneQuizzCreationApp.Migrations
 
             modelBuilder.Entity("CapstoneQuizzCreationApp.Models.User", b =>
                 {
+                    b.Navigation("Favourites");
+
                     b.Navigation("TestHistories");
                 });
 #pragma warning restore 612, 618

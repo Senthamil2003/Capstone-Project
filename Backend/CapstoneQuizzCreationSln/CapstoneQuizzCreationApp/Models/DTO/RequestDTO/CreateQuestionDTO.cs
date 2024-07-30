@@ -4,6 +4,7 @@
     {
         public string CertificationName { get; set; }
         public string TestDescription { get; set; }
+        public string DificultyLeavel { get; set; }
         public string CreatedDate { get; set; }
         public int AttendQuestionCount { get; set; }
         public int TotalAvailableQuestion {  get; set; }

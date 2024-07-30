@@ -16,6 +16,7 @@ namespace CapstoneQuizzCreationApp.Models
         public int RetakeWaitDays { get; set; }
         public int TestDurationMinutes { get; set; }
         public bool IsActive { get; set; }
+        public string dificultyLeavel {  get; set; }
         public ICollection<Question> Questions { get; set; }
     }
 }

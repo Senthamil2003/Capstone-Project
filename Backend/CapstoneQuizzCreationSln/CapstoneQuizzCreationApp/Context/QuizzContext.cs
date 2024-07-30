@@ -29,6 +29,12 @@ namespace CapstoneQuizzCreationApp.Context
                .HasForeignKey(c => c.SubmissionId)
                .OnDelete(DeleteBehavior.Restrict)
                .IsRequired();
+            modelBuilder.Entity<Favourite>()
+             .HasOne(c => c.User)
+             .WithMany(u=>u.Favourites)
+             .HasForeignKey(c => c.UserId)
+             .OnDelete(DeleteBehavior.Restrict)
+             .IsRequired();
 
             modelBuilder.Entity<Certificate>()
                 .HasOne(c => c.User)

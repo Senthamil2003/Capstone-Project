@@ -13,6 +13,6 @@ namespace CapstoneQuizzCreationApp.Models
         public string Role { get; set; }
         public bool IsSubcribed { get; set; } = false;
         public ICollection<TestHistory> TestHistories { get; set; }   
-
+        public ICollection<Favourite> Favourites { get; set; }
     }
 }

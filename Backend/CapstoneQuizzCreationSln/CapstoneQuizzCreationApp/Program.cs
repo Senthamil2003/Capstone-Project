@@ -55,7 +55,11 @@ namespace CapstoneQuizzCreationApp
             builder.Services.AddScoped<SubmissionTestQuestionRepository, SubmissionTestQuestionRepository>();
             builder.Services.AddScoped<SubmissionAnswerQuestionOnly, SubmissionAnswerQuestionOnly>();
             builder.Services.AddScoped<HistoryWithUserRepository, HistoryWithUserRepository>();
-            builder.Services.AddScoped<UserTestHIstory, UserTestHIstory>();
+            builder.Services.AddScoped<UserHistoryFavouriteRepository, UserHistoryFavouriteRepository>();
+            builder.Services.AddScoped<UserFavouriteRepository, UserFavouriteRepository>();
+            builder.Services.AddScoped<UserHistoryTest, UserHistoryTest>();
+            builder.Services.AddScoped<UserTestHIstoryRepository, UserTestHIstoryRepository>();
+            builder.Services.AddScoped<UserFavouriteTestRepository, UserFavouriteTestRepository>();
 
 
             #endregion
@@ -64,6 +68,8 @@ namespace CapstoneQuizzCreationApp
             builder.Services.AddScoped<IAdminService, AdminService>();
             builder.Services.AddScoped<ITestService, TestService>();
             builder.Services.AddScoped<ITokenService, TokenService>();
+            builder.Services.AddScoped<IUserService, UserService>();
+
             #endregion
             #region CORS
             builder.Services.AddCors(opts =>

@@ -19,7 +19,7 @@ namespace CapstoneQuizzCreationApp.Services
         private readonly CertificationTestQuestionRepository _certificationTestQuestionRepo;
         private readonly ITransactionService _transactionService;
         public readonly IRepository<int, CertificationTest> _certificateTestRepo;
-        private readonly UserTestHIstory _userTestHIstory;
+        private readonly UserTestHIstoryRepository _userTestHIstory;
         private readonly IRepository<int,TestHistory> _testHistoryRepo;
         private readonly SubmissionAnswerQuestionOnly _submissionAnswerQuestionOnly;
         private readonly SubmissionTestQuestionRepository _submissionQuestionRepo;
@@ -31,7 +31,7 @@ namespace CapstoneQuizzCreationApp.Services
             IRepository<int, SubmissionAnswer> submissionAnswerRepo,
             CertificationTestQuestionRepository certificationTestQuestionRepo,
             ITransactionService transactionService,
-            UserTestHIstory userTestHIstory,
+            UserTestHIstoryRepository userTestHIstory,
             IRepository<int, TestHistory> testHistoryRepo,
             SubmissionTestQuestionRepository submissionQuestionRepo,
             SubmissionAnswerQuestionOnly submissionAnswerQuestionOnly,
@@ -344,6 +344,7 @@ namespace CapstoneQuizzCreationApp.Services
                         }
                     }
                     submission.ObtainedScore= obtainedScore;
+
                     TimeSpan timeDifference = DateTime.Now - submission.StartTime;
                     submission.TimeTaken = timeDifference.TotalSeconds;
                     submission.IsSubmited = true;
@@ -364,15 +365,16 @@ namespace CapstoneQuizzCreationApp.Services
                            if(certificate.MaxObtainedScore < obtainedScore)
                             {
                                 certificate.MaxObtainedScore= obtainedScore;
-                                history.MaxObtainedScore = obtainedScore;
+                                certificate.SubmissionId = submission.SubmissionId;
+                                certificate.TimeTaken = submission.TimeTaken;
+                                history.MaxObtainedScore = obtainedScore;                                
                                 history.PassSubmissionId = submission.SubmissionId;
                                 history.TimeTaken = submission.TimeTaken;
                                 history.SubmissionTIme = DateTime.Now;
                             }
                            certificateId=certificate.CertificateId;
                            MaxObtainedScore=certificate.MaxObtainedScore;
-                           certificate.ProvidedDate= DateTime.Now;  
-                            certificate.TimeTaken=submission.TimeTaken;
+
                            await _certificateRepo.Update(certificate);
                             
                         }
@@ -402,6 +404,14 @@ namespace CapstoneQuizzCreationApp.Services
                                      
 
                     }
+                    else
+                    {
+                        if (history.MaxObtainedScore < obtainedScore)
+                        {
+                            history.MaxObtainedScore=obtainedScore;
+                        }
+                    }
+                    history.LatesttestEndTime = DateTime.Now;
                     await _submissionRepo.Update(submission);
                     await _testHistoryRepo.Update(history);
                     TestResultDTO resultDTO = new TestResultDTO()
@@ -482,6 +492,10 @@ namespace CapstoneQuizzCreationApp.Services
                 {
                     rank = history.Count(h => h.MaxObtainedScore > userHistory.MaxObtainedScore) + 1;
                 }
+                else
+                {
+                    rank = 0;
+                }
 
                 TestStatsDTO testStats = new TestStatsDTO()
                 {
@@ -489,7 +503,8 @@ namespace CapstoneQuizzCreationApp.Services
                     MaxMark = userHistory.MaxObtainedScore,
                     MyRank = rank,
                     PassCount = test.PassCount,
-                    TestTakenCount = test.TestTakenCount
+                    TestTakenCount = test.TestTakenCount,
+                    TotalMark=test.QuestionNeedTotake,
                 };
 
                 return testStats;

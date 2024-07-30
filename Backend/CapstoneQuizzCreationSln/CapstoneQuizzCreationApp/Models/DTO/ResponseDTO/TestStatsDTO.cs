@@ -7,5 +7,7 @@
         public int MaxMark { get; set; }
         public double TestTakenCount { get; set; }
         public double PassCount { get; set; }
+        public int TotalMark { get; set; }
+
     }
 }

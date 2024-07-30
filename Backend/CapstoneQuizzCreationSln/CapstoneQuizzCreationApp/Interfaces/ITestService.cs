@@ -13,6 +13,7 @@ namespace CapstoneQuizzCreationApp.Interfaces
         public Task<TestStatsDTO> GetTestStats(int userId, int testId);
         public Task<List<TestSubmissionDTO>> GetUserSubmission(int userId, int testId);
         public Task<CertificateDataDTO> GetCertificateData(int userId, int testId);
+        
 
     }
 }

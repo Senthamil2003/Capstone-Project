@@ -9,7 +9,7 @@ namespace CapstoneQuizzCreationApp.Models
         public int FavouriteId { get; set; }    
         public int TestId { get; set; }
         public DateTime AddedDate { get; set; }
-        public int UsserId { get; set; }
+        public int UserId { get; set; }
 
         [ForeignKey("TestId")]
         public CertificationTest CertificationTest { get; set; }

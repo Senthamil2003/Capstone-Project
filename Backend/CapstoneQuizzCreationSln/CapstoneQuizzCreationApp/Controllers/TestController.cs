@@ -159,7 +159,7 @@ namespace CapstoneQuizzCreationApp.Controllers
                     return BadRequest(ModelState);
                 }
 
-                TestStatsDTO result = await _testservice.GetTestStats(TestId, UserId);
+                TestStatsDTO result = await _testservice.GetTestStats(UserId, TestId);
                 _logger.LogInformation("User registered successfully.");
                 return Ok(result);
             }
@@ -184,7 +184,7 @@ namespace CapstoneQuizzCreationApp.Controllers
                     return BadRequest(ModelState);
                 }
 
-                List<TestSubmissionDTO> result = await _testservice.GetUserSubmission(TestId, UserId);
+                List<TestSubmissionDTO> result = await _testservice.GetUserSubmission(UserId, TestId);
                 _logger.LogInformation("User registered successfully.");
                 return Ok(result);
             }
