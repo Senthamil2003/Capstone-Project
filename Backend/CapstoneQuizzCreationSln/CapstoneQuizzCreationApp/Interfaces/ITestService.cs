@@ -5,7 +5,7 @@ namespace CapstoneQuizzCreationApp.Interfaces
 {
     public interface ITestService
     {
-        public Task<QuestionWithExpiryDate> StartTest(int certificationTestId, int UserId);
+        public  Task<StartTestDTO> StartTest(int certificationTestId, int UserId);
         public Task<QuestionWithExpiryDate> ResumeTest(int userId, int SubmissionId);
         public Task<SuccessSynchronieDTO> SynchronizeDb(List<SynchronousDataDTO> answers);
         public Task<TestResultDTO> SubmitAnswer(SubmissionAnswerDTO submissionAnswer);
@@ -13,7 +13,9 @@ namespace CapstoneQuizzCreationApp.Interfaces
         public Task<TestStatsDTO> GetTestStats(int userId, int testId);
         public Task<List<TestSubmissionDTO>> GetUserSubmission(int userId, int testId);
         public Task<CertificateDataDTO> GetCertificateData(int userId, int testId);
-        
+        public Task<TestPreviewDTO> TestPreviewPage(int testId, int userId);
+
+
 
     }
 }

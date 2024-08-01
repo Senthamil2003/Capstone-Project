@@ -60,6 +60,7 @@ namespace CapstoneQuizzCreationApp
             builder.Services.AddScoped<UserHistoryTest, UserHistoryTest>();
             builder.Services.AddScoped<UserTestHIstoryRepository, UserTestHIstoryRepository>();
             builder.Services.AddScoped<UserFavouriteTestRepository, UserFavouriteTestRepository>();
+            builder.Services.AddScoped<CertificationTestOnlyQuestionRepo, CertificationTestOnlyQuestionRepo>();
 
 
             #endregion

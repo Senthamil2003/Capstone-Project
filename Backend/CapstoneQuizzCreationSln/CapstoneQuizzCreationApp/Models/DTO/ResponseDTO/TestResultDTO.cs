@@ -2,6 +2,8 @@
 {
     public class TestResultDTO
     {
+        public int TestId { get; set; }
+
         public string TestName { get; set; }
         public int ObtainedScore { get; set; }
         public int TotalScore { get; set; }

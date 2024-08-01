@@ -30,6 +30,9 @@ namespace CapstoneQuizzCreationApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CertificateId"), 1L, 1);
 
+                    b.Property<bool>("IsFastAchiver")
+                        .HasColumnType("bit");
+
                     b.Property<int>("MaxObtainedScore")
                         .HasColumnType("int");
 
@@ -280,6 +283,9 @@ namespace CapstoneQuizzCreationApp.Migrations
                         .HasColumnType("int");
 
                     b.Property<bool>("IsPassed")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("LatestIsSubmited")
                         .HasColumnType("bit");
 
                     b.Property<int>("LatestSubmissionId")

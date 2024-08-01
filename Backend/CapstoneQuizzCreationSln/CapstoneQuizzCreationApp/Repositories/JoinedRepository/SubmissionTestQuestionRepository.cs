@@ -18,6 +18,7 @@ namespace CapstoneQuizzCreationApp.Repositories.JoinedRepository
             try
             {
                 return await _context.Submissions
+                    .Include(s=>s.CertificationTest)
                     .Include(s=>s.SubmissionAnswers)
                     .ThenInclude(a=>a.Question)
                     .ThenInclude(q=>q.Options)

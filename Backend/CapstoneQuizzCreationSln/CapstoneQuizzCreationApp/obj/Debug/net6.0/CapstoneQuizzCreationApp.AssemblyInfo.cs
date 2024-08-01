@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CapstoneQuizzCreationApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a31884974c7d1441b1ab25858af1e95621004141")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3336de2f87ec6fd1a9472bc6c4f66e3f6f4223b8")]
 [assembly: System.Reflection.AssemblyProductAttribute("CapstoneQuizzCreationApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CapstoneQuizzCreationApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

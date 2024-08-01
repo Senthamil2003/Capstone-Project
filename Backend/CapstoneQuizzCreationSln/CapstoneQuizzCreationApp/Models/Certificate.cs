@@ -12,6 +12,7 @@ namespace CapstoneQuizzCreationApp.Models
         public int SubmissionId { get; set; }
         public int MaxObtainedScore { get; set; }
         public double TimeTaken { get; set; }
+        public bool IsFastAchiver { get; set; } = false;
 
         public DateTime ProvidedDate { get; set; }
         [ForeignKey("UserId")]

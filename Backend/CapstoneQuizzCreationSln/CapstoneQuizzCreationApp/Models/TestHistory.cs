@@ -12,6 +12,7 @@ namespace CapstoneQuizzCreationApp.Models
         public  int MaxObtainedScore { get; set; }
         public int? CertificateId { get; set; }
         public bool IsPassed { get; set; }=false;
+        public bool LatestIsSubmited { get; set; }=false ;
         public int? PassSubmissionId { get; set; }
         public double? TimeTaken { get; set; }
         public int LatestSubmissionId { get; set; }

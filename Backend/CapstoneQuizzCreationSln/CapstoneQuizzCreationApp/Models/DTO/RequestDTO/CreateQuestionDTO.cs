@@ -11,6 +11,7 @@
         public int RetakeWaitDays { get; set; }
         public int TestDuration {  get; set; }
         public bool IsActive { get; set; }
+        public IFormFile TestImage { get; set; }
         public List<QuestionDTO> questions { get; set;}
 
     }

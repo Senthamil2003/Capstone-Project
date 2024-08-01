@@ -6,6 +6,7 @@ using CapstoneQuizzCreationApp.Models.DTO.ResponseDTO;
 using CapstoneQuizzCreationApp.Repositories.JoinedRepository;
 using System;
 using System.ComponentModel;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace CapstoneQuizzCreationApp.Services
 {
@@ -25,6 +26,7 @@ namespace CapstoneQuizzCreationApp.Services
         private readonly SubmissionTestQuestionRepository _submissionQuestionRepo;
         private readonly HistoryWithUserRepository _historyWithUserRepo;
         private readonly IRepository<int, User> _userRepository;
+        private readonly CertificationTestOnlyQuestionRepo _certificationTestOnlyQuestionRepo;
         public TestService(IRepository<int, Question> questionRepo,
             IRepository<int, Option> optionRepo,
             IRepository<int, Submission> submissionRepo,
@@ -36,6 +38,7 @@ namespace CapstoneQuizzCreationApp.Services
             SubmissionTestQuestionRepository submissionQuestionRepo,
             SubmissionAnswerQuestionOnly submissionAnswerQuestionOnly,
             IRepository<int, Certificate> certificateRepo,
+            CertificationTestOnlyQuestionRepo certificationTestOnlyQuestionRepo,
 
             IRepository<int, CertificationTest> certificateTestRepo,
             HistoryWithUserRepository historyWithUserRepository,
@@ -57,26 +60,28 @@ namespace CapstoneQuizzCreationApp.Services
             _certificateTestRepo = certificateTestRepo;
             _historyWithUserRepo=historyWithUserRepository;
             _userRepository = uerRepo;
+            _certificationTestOnlyQuestionRepo = certificationTestOnlyQuestionRepo;
 
         }
-        public async Task<QuestionWithExpiryDate> StartTest(int certificationTestId, int UserId)
+        public async Task<StartTestDTO> StartTest(int certificationTestId, int UserId)
         {
             using (var transaction = await _transactionService.BeginTransactionAsync())
             {
                 try
                 {
+
                     TestHistory history = (await _userTestHIstory.Get(UserId)).TestHistories.FirstOrDefault(h => h.TestId == certificationTestId);
-                    var test = (await _certificationTestQuestionRepo.Get(certificationTestId));
+                    var test = (await _certificationTestOnlyQuestionRepo.Get(certificationTestId));
                     Random random = new Random();
                     var allquestions = test.Questions;
                     var questions = allquestions.OrderBy(q => random.Next()).Take(test.QuestionNeedTotake);
                     DateTime now = DateTime.Now;
                     DateTime testEndTime = now.AddMinutes(test.TestDurationMinutes);
                      if (history != null && DateTime.Now <= history.LatesttestEndTime)
-                    {
-                        return await ResumeTest(history.LatestSubmissionId, UserId);
-                    }
-                   else if (history != null)
+                     {
+                        throw new Exception("Test need to Resume no need to start");
+                     }
+                    else if (history != null)
                     {
                         DateTime retakedate = history.LatesttestEndTime.AddDays(test.RetakeWaitDays);
                         if (DateTime.Now < retakedate)
@@ -85,8 +90,7 @@ namespace CapstoneQuizzCreationApp.Services
                         }
 
                     }
-                    
-                    
+                          
               
                     Submission submission = new Submission()
                     {
@@ -104,6 +108,7 @@ namespace CapstoneQuizzCreationApp.Services
                     {
                         history.LatesttestEndTime = DateTime.Now.AddMinutes(test.TestDurationMinutes);
                         history.LatestSubmissionId = submission.SubmissionId;
+                        history.LatestIsSubmited = false;
                         await _testHistoryRepo.Update(history);
                         
                     }
@@ -116,11 +121,12 @@ namespace CapstoneQuizzCreationApp.Services
                             TestId = certificationTestId,
                             LatestSubmissionId=submission.SubmissionId,
                             LatesttestEndTime = testEndTime, 
+                           LatestIsSubmited=false,
                         };
                         await _testHistoryRepo.Add(testHistory);
                         await _certificateTestRepo.Update(test);
                     }
-                    List<TestQuestionDTO> questionDTOs = new List<TestQuestionDTO>();
+             
                     foreach (var question in questions)
                     {
 
@@ -131,39 +137,20 @@ namespace CapstoneQuizzCreationApp.Services
                             QuestionId = question.QuestionId,
                             IsCorrect = false,
                             
+                            
                         };
                         await _submissionAnswerRepo.Add(submissionAnswer);
-                        List<OptionDTO> optionDTOs = new List<OptionDTO>();
-                        foreach (var option in question.Options)
-                        {
-                            OptionDTO optionDTO = new OptionDTO()
-                            {
-                                OptionId = option.OptionId,
-                                OptionName = option.OptionName,
-                            };
-                            optionDTOs.Add(optionDTO);
-                        }
-                        TestQuestionDTO testQuestionDTO = new TestQuestionDTO()
-                        {
-                            QuestionDescription = question.QuestionDescription,
-                            QuestionId = question.QuestionId,
-                            SubmissionAnswerId = submissionAnswer.AnswerId,
-                            Options = optionDTOs,
-                            QuestionType = question.QuestionType,
-
-                        };
-                        questionDTOs.Add(testQuestionDTO);
-
+                    
                     }
 
                     await _transactionService.CommitTransactionAsync();
-                    QuestionWithExpiryDate questionWithExpiryDate = new QuestionWithExpiryDate()
+                
+                    return new StartTestDTO()
                     {
+                        Code=200,
                         SubmissionId=submission.SubmissionId,
-                        TestEndTime = submission.SubmissionTime,
-                        testQuestion = questionDTOs
-                    };
-                    return questionWithExpiryDate; 
+                        Message="Test Starteed Successfully"
+                    }; 
 
 
                 }
@@ -177,6 +164,76 @@ namespace CapstoneQuizzCreationApp.Services
             }
 
         }
+        public async Task<TestPreviewDTO> TestPreviewPage(int testId, int userId)
+        {
+            try
+            {
+                TestHistory history = (await _userTestHIstory.Get(userId)).TestHistories.FirstOrDefault(h => h.TestId == testId);
+                var test = (await _certificationTestQuestionRepo.Get(testId));
+                DateTime now = DateTime.Now;
+                DateTime testEndTime = now.AddMinutes(test.TestDurationMinutes);
+                bool isResume = false;
+                bool isWait = false;
+                bool isPending=false;
+                DateTime LastEndTime=DateTime.Now;
+                DateTime NextTakeTime = DateTime.Now;
+                int submissionId = 0;
+                
+                if (history != null && DateTime.Now <= history.LatesttestEndTime)
+                {
+                    isResume=true;
+                    submissionId = history.LatestSubmissionId;
+                    
+                    
+                }
+                else if(history != null && !history.LatestIsSubmited)
+                {
+                    isPending = true;
+                    submissionId=history.LatestSubmissionId;    
+                }
+                else if (history != null)
+                {
+                    DateTime retakedate = history.LatesttestEndTime.AddDays(test.RetakeWaitDays);
+
+                    
+                    if (DateTime.Now < retakedate)
+                    {
+                        
+                            isWait = true;
+                            LastEndTime = history.LatesttestEndTime;
+                            NextTakeTime = retakedate;
+                        
+                        
+                    }
+
+                }
+
+                TestPreviewDTO testPreview = new TestPreviewDTO()
+                {
+                    Duration=test.TestDurationMinutes,
+                    IsResume=isResume,
+                    IsWait=isWait,
+                    IsPending=isPending,
+                    LastTakenTime=LastEndTime,
+                    NextTestTime=NextTakeTime,
+                    PassMark=6,
+                    TestId=test.TestId,
+                    TestName=test.TestName,
+                    TotalMark=test.QuestionNeedTotake,
+                    TotalQuestion=test.QuestionNeedTotake,
+                    SubmissionId=submissionId,  
+                    
+
+                };
+                return testPreview; 
+
+
+            }
+            catch
+            {
+                throw;
+            }
+        }
         public async Task<QuestionWithExpiryDate> ResumeTest(int SubmissionId, int userId )
         {
             try
@@ -188,21 +245,30 @@ namespace CapstoneQuizzCreationApp.Services
                 }
                 if(submission.IsSubmited)
                 {
-                    //QuestionWithExpiryDate questionWithExpiry = new QuestionWithExpiryDate()
-                    //{
-                    //    SubmissionId = submission.SubmissionId,
-                    //    IsSubmited = submission.IsSubmited,
-                    //    TestEndTime = submission.SubmissionTime,
-                    //    testQuestion = new List<TestQuestionDTO>(),
+                    QuestionWithExpiryDate questionWithExpiry = new QuestionWithExpiryDate()
+                    {
+                        SubmissionId = submission.SubmissionId,
+                        IsSubmited = submission.IsSubmited,
+                        TestEndTime = submission.SubmissionTime,
+                        testQuestion = new List<TestQuestionDTO>(),
 
-                    //};
-                    //return questionWithExpiry;
-                    throw new Exception("Test is Already Submited");
+                    };
+                    return questionWithExpiry;
+                   
                 }
               
                 if(submission.SubmissionTime< DateTime.Now)
                 {
-                    throw new Exception("Test is expired");
+                    QuestionWithExpiryDate questionWithExpiry = new QuestionWithExpiryDate()
+                    {
+                        SubmissionId = submission.SubmissionId,
+                        IsSubmited = true,
+                        TestEndTime = submission.SubmissionTime,
+                        testQuestion = new List<TestQuestionDTO>(),
+
+                    };
+                    return questionWithExpiry;
+
                 }
                 var questions = submission.SubmissionAnswers;
 
@@ -229,6 +295,7 @@ namespace CapstoneQuizzCreationApp.Services
                         Options = optionDTOs,
                         QuestionType= question.Question.QuestionType,
                         SelectedAnswer=question.Option,
+                        IsFlagged=question.IsMarked,
                         
                     };
                     questionDTOs.Add(testQuestionDTO);
@@ -238,6 +305,8 @@ namespace CapstoneQuizzCreationApp.Services
                 {
                     SubmissionId = submission.SubmissionId,
                     TestEndTime = submission.SubmissionTime,
+                     TestDuration=submission.CertificationTest.TestDurationMinutes,
+                     TestName=submission.CertificationTest.TestName,
                     testQuestion = questionDTOs
                 };
 
@@ -249,6 +318,7 @@ namespace CapstoneQuizzCreationApp.Services
                 throw;
             }
         }
+     
         public async Task<SuccessSynchronieDTO> SynchronizeDb(List<SynchronousDataDTO> answers) 
         {
             using (var transaction = await _transactionService.BeginTransactionAsync())
@@ -285,36 +355,37 @@ namespace CapstoneQuizzCreationApp.Services
 
 
         }
-        //private async Task<TestResultDTO> ReturnSubmitedResult(Submission submission)
-        //{
-        //    try
-        //    {
-        //        TestHistory history = (await _userTestHIstory.Get(submission.UserId)).TestHistories.FirstOrDefault(h => h.TestId == submission.TestId);
-        //        int MaxObtainedScore = history.MaxObtainedScore;
-                
+        private async Task<TestResultDTO> ReturnSubmitedResult(Submission submission)
+        {
+            try
+            {
+                TestHistory history = (await _userTestHIstory.Get(submission.UserId)).TestHistories.FirstOrDefault(h => h.TestId == submission.TestId);
+                int MaxObtainedScore = history.MaxObtainedScore;
 
 
-        //        TestResultDTO testResult = new TestResultDTO()
-        //        {
-        //            IsPassed=submission.IsPassed,
-        //            MaxObtainedScore=MaxObtainedScore,
-        //            ObtainedScore=submission.ObtainedScore,
-        //            TotalScore=submission.TotalScore,
-        //            CertificateId=history.CertificateId??0,
-        //            TestName= (await _certificateTestRepo.Get(submission.TestId)).TestName,
-        //            TotalTimeTaken=submission.TimeTaken,
 
-        //        };
-        //        return testResult;  
+                TestResultDTO testResult = new TestResultDTO()
+                {
+                    IsPassed = submission.IsPassed,
+                    MaxObtainedScore = MaxObtainedScore,
+                    ObtainedScore = submission.ObtainedScore,
+                    TotalScore = submission.TotalScore,
+                    CertificateId = history.CertificateId ?? 0,
+                    TestName = (await _certificateTestRepo.Get(submission.TestId)).TestName,
+                    TotalTimeTaken = submission.TimeTaken,
+                    TestId=submission.TestId,
 
-        //    }
-        //    catch
-        //    {
-        //        throw;
+                };
+                return testResult;
 
-        //    }
+            }
+            catch
+            {
+                throw;
 
-        //}
+            }
+
+        }
         public async Task<TestResultDTO> SubmitAnswer(SubmissionAnswerDTO submissionAnswer)
         {
             using (var transaction = await _transactionService.BeginTransactionAsync())
@@ -330,7 +401,7 @@ namespace CapstoneQuizzCreationApp.Services
                     }
                     if (submission.IsSubmited)
                     {
-                        throw new Exception("Test is Already Submited");
+                        return await ReturnSubmitedResult(submission);
                     }
                     int totalScore=0;
                     int certificateId =0;   
@@ -352,6 +423,7 @@ namespace CapstoneQuizzCreationApp.Services
                     TestHistory history= (await _userTestHIstory.Get(submissionAnswer.UserId)).TestHistories.FirstOrDefault(h=>h.TestId==submission.TestId);
                    
                     int MaxObtainedScore=obtainedScore;
+                    history.LatestIsSubmited= true;
                     double result = (Convert.ToDouble( obtainedScore) / Convert.ToDouble( totalScore)) * 100;
                     
                     if (result > 30)
@@ -423,6 +495,7 @@ namespace CapstoneQuizzCreationApp.Services
                         MaxObtainedScore = MaxObtainedScore,
                         CertificateId=certificateId,
                         TotalTimeTaken=submission.TimeTaken,
+                        TestId = submission.TestId,
                     };
                     
                     await _transactionService.CommitTransactionAsync();

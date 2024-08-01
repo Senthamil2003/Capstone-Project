@@ -11,6 +11,8 @@
         public bool IsPassed { get; set; }=false;
         public bool IsResume {  get; set; }=false ;
         public bool IsAttend { get; set; } = false;
+        public bool IsPending { get; set; }=false ;
+        public bool IsActive { get; set; }
         public string TestDifficult { get; set; }
         public bool IsFavourite { get; set; } = false;
         public bool IsWait { get; set; } = false ;

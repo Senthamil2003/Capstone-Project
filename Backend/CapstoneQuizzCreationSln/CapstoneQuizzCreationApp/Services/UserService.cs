@@ -46,7 +46,7 @@ namespace CapstoneQuizzCreationApp.Services
         {
             try
             {
-                var allTests = await _certificationTestRepository.Get();
+                var allTests = (await _certificationTestRepository.Get()).Where(t=>t.IsActive);
                 var user = await _userHistoryFavouriteRepository.Get(userId);
                 var history = user.TestHistories.ToDictionary(h => h.TestId);
                 var favourites = user.Favourites.ToHashSet();
@@ -56,6 +56,7 @@ namespace CapstoneQuizzCreationApp.Services
                     var isAttend = history.TryGetValue(test.TestId, out var testHistory);
                     var isPassed = isAttend && testHistory.IsPassed;
                     var isResume = isAttend && testHistory.LatesttestEndTime > DateTime.Now;
+                    var isPending = isAttend && testHistory.LatesttestEndTime < DateTime.Now && !testHistory.LatestIsSubmited;
                     var favourite = favourites.FirstOrDefault(f => f.TestId == test.TestId);
                     var isLiked = favourite != null;
                     var isWait = isAttend && (testHistory.LatesttestEndTime).AddDays(test.RetakeWaitDays) > DateTime.Now;
@@ -93,6 +94,7 @@ namespace CapstoneQuizzCreationApp.Services
                         Duration = test.TestDurationMinutes,
                         IsAttend = isAttend,
                         IsPassed = isPassed,
+                        IsPending = isPending,
                         IsResume = isResume,
                         PassCount = test.PassCount,
                         TestTakenCount = test.TestTakenCount,
@@ -185,11 +187,13 @@ namespace CapstoneQuizzCreationApp.Services
                     var test = history.CertificationTest;
                     var isAttend = true;
                     var isPassed = isAttend && history.IsPassed;
+                    var isPending=isAttend && history.LatesttestEndTime<DateTime.Now && !history.LatestIsSubmited;
                     var isResume = isAttend && history.LatesttestEndTime > DateTime.Now;
                     var favourite = favourites.FirstOrDefault(f => f.TestId == test.TestId);
                     var isLiked = favourite != null;
                     var isWait = isAttend && (history.LatesttestEndTime).AddDays(test.RetakeWaitDays) > DateTime.Now;
                     string testDifficult = test.dificultyLeavel;
+
                     if (test.TestTakenCount > 10)
                     {
                         if (test.PassCount == 0)
@@ -230,7 +234,9 @@ namespace CapstoneQuizzCreationApp.Services
                         TestName = test.TestName,
                         IsFavourite = isLiked,
                         IsWait = isWait,
+                        IsPending=isPending,
                         FavouriteId = favourite?.FavouriteId ?? 0,
+                        IsActive=test.IsActive
                     };
                     result.Add(allTestsDTO);
                     
@@ -249,18 +255,18 @@ namespace CapstoneQuizzCreationApp.Services
             try
             {
                 var user = await _userFavouriteTestRepository.Get(userId);
-                var favourites = user.Favourites;
+                var favourites = user.Favourites.Where(f=>f.CertificationTest.IsActive);
                 var histories = user.TestHistories.ToDictionary(h => h.TestId);
                 List<AllTestsDTO> result = new List<AllTestsDTO>();
                 foreach (var favouriteitem in favourites)
                 {
-                    var test=favouriteitem.CertificationTest;
-                    
+                    var test=favouriteitem.CertificationTest;                    
                     var isAttend = histories.TryGetValue(test.TestId, out var testHistory);
                     var isPassed = isAttend && testHistory.IsPassed;
                     var isResume = isAttend && testHistory.LatesttestEndTime > DateTime.Now;
                     var favourite = favourites.FirstOrDefault(f => f.TestId == test.TestId);
                     var isLiked = favourite != null;
+                    var isPending = isAttend && testHistory.LatesttestEndTime < DateTime.Now && !testHistory.LatestIsSubmited;
                     var isWait = isAttend && (testHistory.LatesttestEndTime).AddDays(test.RetakeWaitDays) > DateTime.Now;
                     string testDifficult = test.dificultyLeavel;
                     if (test.TestTakenCount > 10)
@@ -303,6 +309,7 @@ namespace CapstoneQuizzCreationApp.Services
                         TestName = test.TestName,
                         IsFavourite = isLiked,
                         IsWait = isWait,
+                        IsPending= isPending,
                         FavouriteId = favourite?.FavouriteId ?? 0,
                     };
                     result.Add(allTestsDTO);
@@ -321,7 +328,7 @@ namespace CapstoneQuizzCreationApp.Services
         {
             try
             {
-                var allTests = (await _certificationTestRepository.Get()).OrderByDescending(t=>t.TestTakenCount).Take(4);
+                var allTests = (await _certificationTestRepository.Get()).Where(t=>t.IsActive).OrderByDescending(t=>t.TestTakenCount).Take(4);
                 var user = await _userHistoryFavouriteRepository.Get(userId);
                 var history = user.TestHistories.ToDictionary(h => h.TestId);
                 var favourites = user.Favourites.ToHashSet();
@@ -331,6 +338,7 @@ namespace CapstoneQuizzCreationApp.Services
                     var isAttend = history.TryGetValue(test.TestId, out var testHistory);
                     var isPassed = isAttend && testHistory.IsPassed;
                     var isResume = isAttend && testHistory.LatesttestEndTime > DateTime.Now;
+                    var isPending = isAttend && testHistory.LatesttestEndTime < DateTime.Now && !testHistory.LatestIsSubmited;
                     var favourite = favourites.FirstOrDefault(f => f.TestId == test.TestId);
                     var isLiked = favourite != null;
                     var isWait = isAttend && (testHistory.LatesttestEndTime).AddDays(test.RetakeWaitDays) > DateTime.Now;
@@ -374,6 +382,7 @@ namespace CapstoneQuizzCreationApp.Services
                         TestId = test.TestId,
                         TestName = test.TestName,
                         IsFavourite = isLiked,
+                        IsPending= isPending,
                         IsWait = isWait,
                         FavouriteId = favourite?.FavouriteId ?? 0,
                     };

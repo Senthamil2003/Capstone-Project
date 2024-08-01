@@ -20,9 +20,9 @@ namespace CapstoneQuizzCreationApp.Controllers
             _logger = logger;
         }
         [HttpGet("StartTest")]
-        [ProducesResponseType(typeof(QuestionWithExpiryDate), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(StartTestDTO), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status401Unauthorized)]
-        public async Task<ActionResult<QuestionWithExpiryDate>> StartTest(int CertificateTestId ,int UserId)
+        public async Task<ActionResult<StartTestDTO>> StartTest(int CertificateTestId ,int UserId)
         {
             try
             {
@@ -34,7 +34,7 @@ namespace CapstoneQuizzCreationApp.Controllers
                     return BadRequest(ModelState);
                 }
 
-                QuestionWithExpiryDate result = await _testservice.StartTest(CertificateTestId, UserId);
+                StartTestDTO result = await _testservice.StartTest(CertificateTestId, UserId);
                 _logger.LogInformation("User authenticated successfully.");
                 return Ok(result);
             }
@@ -44,6 +44,32 @@ namespace CapstoneQuizzCreationApp.Controllers
                 return Unauthorized(new ErrorModel(401, ex.Message));
             }
         }
+        [HttpGet("TestPreview")]
+        [ProducesResponseType(typeof(TestPreviewDTO), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status401Unauthorized)]
+        public async Task<ActionResult<TestPreviewDTO>> TestPreview(int CertificateTestId, int UserId)
+        {
+            try
+            {
+                _logger.LogInformation("Received a user login request.");
+
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogWarning("Invalid model state for the login request.");
+                    return BadRequest(ModelState);
+                }
+
+                var result = await _testservice.TestPreviewPage(CertificateTestId, UserId);
+                _logger.LogInformation("User authenticated successfully.");
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"An error occurred during user authentication: {ex.Message}");
+                return Unauthorized(new ErrorModel(401, ex.Message));
+            }
+        }
+
         [HttpGet("ResumeTest")]
         [ProducesResponseType(typeof(QuestionWithExpiryDate), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status401Unauthorized)]

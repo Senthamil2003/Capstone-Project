@@ -39,19 +39,51 @@ namespace CapstoneQuizzCreationApp.Services
                         CorrectAnswer=questionItem.CorrectAnswer,
                     };
                     await _questionRepo.Add(question);
-
-                    foreach (var optionItem in questionItem.Options)
+                    if (question.QuestionType!="Fillups")
                     {
-
-                        Option option = new Option()
+                        if(question.QuestionType== "True/False")
                         {
-                            OptionName = optionItem,
-                            QuestionId = question.QuestionId,
+                            int ct = 0;
+                            foreach (var optionItem in questionItem.Options)
+                            {
+                                if(ct==2)
+                                {
+                                    break;
+                                }
 
-                        };
-                       await _optionRepo.Add(option);
+                                Option option = new Option()
+                                {
+                                    OptionName = optionItem,
+                                    QuestionId = question.QuestionId,
+
+                                };
+                                await _optionRepo.Add(option);
+                                ct++;
+
+                            }
+
+                        }
+                        else
+                        {
+                            foreach (var optionItem in questionItem.Options)
+                            {
+
+                                Option option = new Option()
+                                {
+                                    OptionName = optionItem,
+                                    QuestionId = question.QuestionId,
+
+                                };
+                                await _optionRepo.Add(option);
+
+                            }
+
+                        }
                       
+
                     }
+
+                   
                     
                 }
 
@@ -64,6 +96,81 @@ namespace CapstoneQuizzCreationApp.Services
 
 
          }
+        public async Task<TestVisibleResponseDTO> ChangeVisibility(int testId)
+        {   
+            try
+            {
+               CertificationTest test=await _certificationRepo.Get(testId);
+               test.IsActive=!test.IsActive;
+               await _certificationRepo.Update(test);
+                return new TestVisibleResponseDTO()
+                {
+                    Code = 200,
+                    Status = test.IsActive,
+                    Message = "Update successful",
+                };
+
+            }
+            catch
+            {
+                throw;
+            }
+
+        }
+        public async Task<List<AdminAllTestDTO>> GetAllTest()
+        {
+            try
+            {
+                var tests = await _certificationRepo.Get();
+                List<AdminAllTestDTO> adminAllTests = new List<AdminAllTestDTO>();
+                foreach (var test in tests)
+                {
+                    string testDifficult = test.dificultyLeavel;
+                    if (test.TestTakenCount > 10)
+                    {
+                        if (test.PassCount == 0)
+                        {
+                            testDifficult = "Hard";
+                        }
+                        else
+                        {
+                            double percent = (double)test.PassCount / test.TestTakenCount * 100;
+                            if (percent >= 80)
+                            {
+                                testDifficult = "Easy";
+                            }
+                            else if (percent >= 60)
+                            {
+                                testDifficult = "Medium";
+                            }
+                            else
+                            {
+                                testDifficult = "Hard";
+                            }
+                        }
+
+                    }
+
+                    AdminAllTestDTO testDTO = new AdminAllTestDTO()
+                    {
+                        TestId = test.TestId,
+                        Difficulty = testDifficult,
+                        Duration = test.TestDurationMinutes,
+                        TestDescription = test.TestDescription,
+                        IsActive = test.IsActive,
+                        TestName = test.TestName,
+                    };
+                    adminAllTests.Add(testDTO);
+
+                }
+                return adminAllTests;
+            }
+            catch
+            {
+                throw;
+
+            }
+        }
         public async Task<SuccessCertificationTestCreatedDTO> CreateCertificationTest(CreateQuestionDTO createQuestion)
             {
             using (var transaction = await _transactionService.BeginTransactionAsync())
