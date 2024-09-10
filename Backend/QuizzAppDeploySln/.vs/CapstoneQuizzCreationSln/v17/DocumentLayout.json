@@ -1,0 +1,201 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\VC\\Documents\\AppServiceBackendDeploy\\QuizzAppDeploySln\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\QuizzAppDeploy.csproj|c:\\users\\vc\\documents\\appservicebackenddeploy\\quizzappdeploysln\\capstonequizzcreationapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\QuizzAppDeploy.csproj|solutionrelative:capstonequizzcreationapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\QuizzAppDeploy.csproj|c:\\users\\vc\\documents\\appservicebackenddeploy\\quizzappdeploysln\\capstonequizzcreationapp\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\QuizzAppDeploy.csproj|solutionrelative:capstonequizzcreationapp\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\QuizzAppDeploy.csproj|c:\\users\\vc\\documents\\appservicebackenddeploy\\quizzappdeploysln\\capstonequizzcreationapp\\services\\blobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\QuizzAppDeploy.csproj|solutionrelative:capstonequizzcreationapp\\services\\blobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\QuizzAppDeploy.csproj|c:\\users\\vc\\documents\\appservicebackenddeploy\\quizzappdeploysln\\capstonequizzcreationapp\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\QuizzAppDeploy.csproj|solutionrelative:capstonequizzcreationapp\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\QuizzAppDeploy.csproj|c:\\users\\vc\\documents\\appservicebackenddeploy\\quizzappdeploysln\\capstonequizzcreationapp\\services\\testservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\QuizzAppDeploy.csproj|solutionrelative:capstonequizzcreationapp\\services\\testservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\QuizzAppDeploy.csproj|c:\\users\\vc\\documents\\appservicebackenddeploy\\quizzappdeploysln\\capstonequizzcreationapp\\models\\dto\\responsedto\\adminalltestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\QuizzAppDeploy.csproj|solutionrelative:capstonequizzcreationapp\\models\\dto\\responsedto\\adminalltestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\QuizzAppDeploy.csproj|c:\\users\\vc\\documents\\appservicebackenddeploy\\quizzappdeploysln\\capstonequizzcreationapp\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\QuizzAppDeploy.csproj|solutionrelative:capstonequizzcreationapp\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\QuizzAppDeploy.csproj|c:\\users\\vc\\documents\\appservicebackenddeploy\\quizzappdeploysln\\capstonequizzcreationapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\QuizzAppDeploy.csproj|solutionrelative:capstonequizzcreationapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\QuizzAppDeploy.csproj|c:\\users\\vc\\documents\\appservicebackenddeploy\\quizzappdeploysln\\capstonequizzcreationapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\QuizzAppDeploy.csproj|solutionrelative:capstonequizzcreationapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\QuizzAppDeploy.csproj|c:\\users\\vc\\documents\\appservicebackenddeploy\\quizzappdeploysln\\capstonequizzcreationapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\QuizzAppDeploy.csproj|solutionrelative:capstonequizzcreationapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\QuizzAppDeploy.csproj|c:\\users\\vc\\documents\\appservicebackenddeploy\\quizzappdeploysln\\capstonequizzcreationapp\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DAA585-0AB9-4D66-8EBD-5DAE48A0673A}|CapstoneQuizzCreationApp\\QuizzAppDeploy.csproj|solutionrelative:capstonequizzcreationapp\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BlobService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\AppServiceBackendDeploy\\QuizzAppDeploySln\\CapstoneQuizzCreationApp\\Services\\BlobService.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Services\\BlobService.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\AppServiceBackendDeploy\\QuizzAppDeploySln\\CapstoneQuizzCreationApp\\Services\\BlobService.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Services\\BlobService.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAwwB4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T17:09:44.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\AppServiceBackendDeploy\\QuizzAppDeploySln\\CapstoneQuizzCreationApp\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\AppServiceBackendDeploy\\QuizzAppDeploySln\\CapstoneQuizzCreationApp\\Services\\UserService.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Services\\UserService.cs",
+              "ViewState": "AQIAAFwBAAAAAAAAAAAAAAQBAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T16:32:30.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TestService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\AppServiceBackendDeploy\\QuizzAppDeploySln\\CapstoneQuizzCreationApp\\Services\\TestService.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Services\\TestService.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\AppServiceBackendDeploy\\QuizzAppDeploySln\\CapstoneQuizzCreationApp\\Services\\TestService.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Services\\TestService.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAuwEgAAABoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T16:32:13.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminAllTestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\AppServiceBackendDeploy\\QuizzAppDeploySln\\CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\AdminAllTestDTO.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\AdminAllTestDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\AppServiceBackendDeploy\\QuizzAppDeploySln\\CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\AdminAllTestDTO.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Models\\DTO\\ResponseDTO\\AdminAllTestDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T16:07:30.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\AppServiceBackendDeploy\\QuizzAppDeploySln\\CapstoneQuizzCreationApp\\Services\\AdminService.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Services\\AdminService.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\AppServiceBackendDeploy\\QuizzAppDeploySln\\CapstoneQuizzCreationApp\\Services\\AdminService.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Services\\AdminService.cs",
+              "ViewState": "AQIAAKgAAAAAAAAAAAAkwLIAAABnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T16:07:11.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\AppServiceBackendDeploy\\QuizzAppDeploySln\\CapstoneQuizzCreationApp\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\AppServiceBackendDeploy\\QuizzAppDeploySln\\CapstoneQuizzCreationApp\\Services\\AuthService.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Services\\AuthService.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAkwG0AAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T16:03:23.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\AppServiceBackendDeploy\\QuizzAppDeploySln\\CapstoneQuizzCreationApp\\Program.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Program.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\AppServiceBackendDeploy\\QuizzAppDeploySln\\CapstoneQuizzCreationApp\\Program.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Program.cs",
+              "ViewState": "AQIAAHkAAAAAAAAAAAAQwBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T03:40:54.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\AppServiceBackendDeploy\\QuizzAppDeploySln\\CapstoneQuizzCreationApp\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\AppServiceBackendDeploy\\QuizzAppDeploySln\\CapstoneQuizzCreationApp\\Controllers\\UserController.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAwwFsAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T02:47:16.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TestController.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\AppServiceBackendDeploy\\QuizzAppDeploySln\\CapstoneQuizzCreationApp\\Controllers\\TestController.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Controllers\\TestController.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\AppServiceBackendDeploy\\QuizzAppDeploySln\\CapstoneQuizzCreationApp\\Controllers\\TestController.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Controllers\\TestController.cs",
+              "ViewState": "AQIAAB0BAAAAAAAAAAAUwCsBAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T02:46:42.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\AppServiceBackendDeploy\\QuizzAppDeploySln\\CapstoneQuizzCreationApp\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\AppServiceBackendDeploy\\QuizzAppDeploySln\\CapstoneQuizzCreationApp\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAkwFMAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T02:46:22.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\AppServiceBackendDeploy\\QuizzAppDeploySln\\CapstoneQuizzCreationApp\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "CapstoneQuizzCreationApp\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\AppServiceBackendDeploy\\QuizzAppDeploySln\\CapstoneQuizzCreationApp\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "CapstoneQuizzCreationApp\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAABxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T02:44:06.973Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
